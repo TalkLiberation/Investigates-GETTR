@@ -1,0 +1,4 @@
+AppsFlyer	AF_SYNC	https://support.appsflyer.com/hc/en-us/articles/360001610038-PBA-Web-SDK-integration-guide
+AppsFlyer	afUserId	https://support.appsflyer.com/hc/en-us/articles/360006997298-Web-Server-to-server-events-API-for-PBA-Web-S2S-
+Google AdSense	_gcl_au	https://cookiedatabase.org/cookie/google-adsense/_gcl_au/
+Facebook Pixel	_fbp	https://cookiedatabase.org/cookie/facebook/_fbp/

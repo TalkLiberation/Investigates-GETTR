@@ -1,0 +1,198 @@
+Delivered-To: petergibbons@sharklasers.com
+Received: from 104.245.209.201 ([104.245.209.201])
+	by sharklasers.com with ESMTPS id 6f573c72b982ba8857bd2150316dc5d8@sharklasers.com;
+	Thu, 06 Jan 2022 16:39:01 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=pm; d=pm.mtasv.net;
+ h=From:Date:Subject:Message-Id:To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+ bh=Vc2S4A9RMpxFuPT1kGtRzeLVczM=;
+ b=LJ+6jhxvlwcOFvvgSuR2d3EnnarkX1K8JlqYt6NkVyEQBvdaeFPJXOr1sDeXHhMCv5bzDe7Dtyjt
+   xtt9dZcHOsbJEbo6Vu2wxqPIF7ZEjwnZPVQya939J2CD0BVnQOOqOivl5a2kW18K+l9O9UeGwNI2
+   SvHpouKVmYo4nPVUdPE=
+Received: by mta201a-ord.mtasv.net id hqsdia27tk4a for <petergibbons@sharklasers.com>; Thu, 6 Jan 2022 11:39:00 -0500 (envelope-from <pm_bounces@pm-bounces.mail2.gettr.com>)
+X-PM-IP: 104.245.209.201
+X-IADB-IP: 104.245.209.201
+X-IADB-IP-REVERSE: 201.209.245.104
+DKIM-Signature: v=1; a=rsa-sha256; d=mail2.gettr.com; s=20210702052147pm;
+	c=relaxed/relaxed; i=noreply@mail2.gettr.com; t=1641487139;
+	h=cc:content-transfer-encoding:content-type:date:from:in-reply-to:
+	list-archive:list-help:list-id:list-owner:list-post:list-subscribe:
+	list-unsubscribe:mime-version:message-id:references:reply-to:resent-cc:
+	resent-date:resent-from:resent-message-id:resent-sender:resent-to:sender:
+	subject:to:feedback-id;
+	bh=rre3Q+PADDSKTvqw0Z4Pdc6j2BTi6LEC+1qVZ02mIDk=;
+	b=YLqGs5jC7OEaPIO2BPIARR4STnuqmDvlbBMfuNEJloiaSc6aP2HbrIGPmPccpVG8KyYEeSTw2RU
+	PIqSx7dbLYKekTotvaAFlo6gYpu7LjpSpNQSeT2zNn9tzQ8MGNok6VzGHjbwjNuAEOuIdOtQHX85o
+	nt48N4WcdG54Z/AsAe0=
+From: noreply@mail2.gettr.com
+Date: Thu, 06 Jan 2022 16:38:59 +0000
+Subject: 765887 is Your Verification Code - GETTR Customer Support
+Message-Id: <929278e9-9f77-4910-bbb3-c8953ddb45e8@mtasv.net>
+To: petergibbons@sharklasers.com
+Feedback-ID: s7919026-_:s7919026:a213620:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-PM-Message-Id: 929278e9-9f77-4910-bbb3-c8953ddb45e8
+X-PM-RCPT: |bTB8MjEzNjIwfDc5MTkwMjZ8cGV0ZXJnaWJib25zQHNoYXJrbGFzZXJzLmNvbQ==|
+X-PM-Message-Options: v1;9Hcc_PIAriBnYBOfaIwCcyIPcaJJ4QcTBG0Vjf0upsKfpR9qOJtFHrXwPywaBTAW0yivONdmCE8g_Gy1UcqUBBDOwW7mU_BYoMQKRhXnXR0
+MIME-Version: 1.0
+X-PM-MTA-Pool: transactional-2
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml"><head><tit=
+le>Your GETTR Verification Code - GETTR Customer Support</title><!--[i=
+f !mso]><!- - --><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D=
+edge"><!--<![endif]--><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><meta name=3D"viewport" content=3D"width=3Dde=
+vice-width,initial-scale=3D1"><!--[if mso]>
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]--><!--[if lte mso 11]>
+        <style type=3D"text/css">
+          .mj-outlook-group-fix { width:100% !important; }
+        </style>
+        <![endif]--><style type=3D"text/css">@media only screen and (m=
+in-width:480px) {.mj-column-per-100{width:100% !important;max-width:10=
+0%;}}</style><style type=3D"text/css">@media only screen and (max-widt=
+h:480px) {table.mj-full-width-mobile{width:100% !important;}td.mj-full=
+-width-mobile{width:auto !important;}}</style></head><body style=3D"ba=
+ckground-color: #ffffff; margin: 0; padding: 0; -webkit-text-size-adju=
+st: 100%; -ms-text-size-adjust: 100%;"><div style=3D"background-color:=
+#ffffff;"><!--[if mso | IE]><table align=3D"center" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=
+=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-heig=
+ht-rule:exactly;"><![endif]--><div style=3D"margin:0px auto;max-width:=
+600px;"><table style=3D"width: 100%; border-collapse: collapse; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation"><tbody><tr>=
+<td style=3D"direction: ltr; font-size: 0px; padding: 0px 0 0px 0; pad=
+ding-bottom: 0px; padding-top: 0px; text-align: center; border-collaps=
+e: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><!--[if ms=
+o | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:6=
+00px;" ><![endif]--><div class=3D"mj-column-per-100 mj-outlook-group-f=
+ix" style=3D"font-size:0px;text-align:left;direction:ltr;display:inlin=
+e-block;vertical-align:top;width:100%;"><table style=3D"border-collaps=
+e: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"=
+100%"><tbody><tr><td style=3D"vertical-align: top; padding: 0 0 0 0; b=
+order-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+;"><table style=3D"border-collapse: collapse; mso-table-lspace: 0pt; m=
+so-table-rspace: 0pt;" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"font-si=
+ze: 0px; padding: 20px 25px 10px 25px; padding-top: 20px; padding-righ=
+t: 25px; padding-left: 25px; word-break: break-word; border-collapse: =
+collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align=3D"left=
+"><table style=3D"border-collapse: collapse; border-spacing: 0px; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt;" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" role=3D"presentation"><tbody><tr><td style=3D"wi=
+dth: 200px; border-collapse: collapse; mso-table-lspace: 0pt; mso-tabl=
+e-rspace: 0pt;"><img style=3D"border: 0; border-radius: 0; display: bl=
+ock; outline: none; text-decoration: none; height: auto; width: 100%; =
+font-size: 13px; line-height: 100%; -ms-interpolation-mode: bicubic;" =
+alt=3D"Logo" height=3D"auto" src=3D"https://www.gettr.com/media/logo.p=
+ng" width=3D"200"></td></tr></tbody></table></td></tr><tr><td style=3D=
+"font-size: 0px; padding: 10px 25px; padding-top: 0px; padding-bottom:=
+ 0px; word-break: break-word; border-collapse: collapse; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" align=3D"left"><div style=3D"font-fa=
+mily:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-heigh=
+t:1;text-align:left;color:#000000;"></div></td></tr></tbody></table></=
+td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![e=
+ndif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></=
+table><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:600px;" width=3D"600" ><tr><td styl=
+e=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![e=
+ndif]--><div style=3D"background:#FFFFFF;background-color:#FFFFFF;marg=
+in:0px auto;max-width:600px;"><table style=3D"background: #FFFFFF; bac=
+kground-color: #FFFFFF; width: 100%; border-collapse: collapse; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt;" align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation"><tbody><tr>=
+<td style=3D"direction: ltr; font-size: 0px; padding: 0px 0 0px 0; pad=
+ding-bottom: 0px; padding-top: 0px; text-align: center; border-collaps=
+e: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><!--[if ms=
+o | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:middle;widt=
+h:600px;" ><![endif]--><div class=3D"mj-column-per-100 mj-outlook-grou=
+p-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:in=
+line-block;vertical-align:middle;width:100%;"><table style=3D"border-c=
+ollapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" wid=
+th=3D"100%"><tbody><tr><td style=3D"vertical-align: middle; padding: 0=
+ 0 0 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt;"><table style=3D"border-collapse: collapse; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt;" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D=
+"font-size: 0px; padding: 25px 25px 0 25px; padding-top: 25px; padding=
+-right: 25px; padding-bottom: 0px; padding-left: 25px; word-break: bre=
+ak-word; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-r=
+space: 0pt;" align=3D"left"><div style=3D"font-family:Arial, sans-seri=
+f;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;c=
+olor:#000000;"><h1 class=3D"text-build-content" style=3D"margin-top: 1=
+0px; margin-bottom: 10px; font-weight: normal;" data-testid=3D"EFc133w=
+PSqdJ">765887 is Your GETTR Verification Code</h1></div></td></tr><tr>=
+<td style=3D"font-size: 0px; padding: 0 25px 20px 25px; padding-top: 0=
+px; padding-right: 25px; padding-bottom: 20px; padding-left: 25px; wor=
+d-break: break-word; border-collapse: collapse; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt;" align=3D"left"><div style=3D"font-family:Aria=
+l, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-=
+align:left;color:#000000;"><p class=3D"text-build-content" style=3D"ma=
+rgin: 13px 0; margin-top: 10px; display: block;" data-testid=3D"N3c5Mr=
+l6jKsx"><span style=3D"color:#292929;font-family:Arial;font-size:15px;=
+line-height:22px;">Please confirm your email address for GETTR by ente=
+ring the verification code below. The code is valid for 30 minutes.</s=
+pan></p><p class=3D"text-build-content" style=3D"margin: 13px 0; displ=
+ay: block;" data-testid=3D"N3c5Mrl6jKsx">&nbsp;</p><p class=3D"text-bu=
+ild-content" style=3D"margin: 13px 0; display: block;" data-testid=3D"=
+N3c5Mrl6jKsx"><span style=3D"font-family:Helvetica;font-size:22px;"><b=
+>765887</b></span></p><p class=3D"text-build-content" style=3D"margin:=
+ 13px 0; display: block;" data-testid=3D"N3c5Mrl6jKsx">&nbsp;</p><p cl=
+ass=3D"text-build-content" style=3D"margin: 13px 0; margin-bottom: 10p=
+x; display: block;" data-testid=3D"N3c5Mrl6jKsx"><span style=3D"color:=
+#292929;font-family:Arial;font-size:15px;line-height:22px;">The GETTR =
+Team</span></p></div></td></tr></tbody></table></td></tr></tbody></tab=
+le></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></t=
+body></table></div><!--[if mso | IE]></td></tr></table><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" s=
+tyle=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;=
+font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D=
+"background:#ffffff;background-color:#ffffff;margin:0px auto;max-width=
+:600px;"><table style=3D"background: #ffffff; background-color: #fffff=
+f; width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt;" align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" role=3D"presentation"><tbody><tr><td style=3D"directio=
+n: ltr; font-size: 0px; padding: 0 0 0 0; text-align: center; border-c=
+ollapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><!--=
+[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;w=
+idth:600px;" ><![endif]--><div class=3D"mj-column-per-100 mj-outlook-g=
+roup-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display=
+:inline-block;vertical-align:top;width:100%;"><table style=3D"border-c=
+ollapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" wid=
+th=3D"100%"><tbody><tr><td style=3D"vertical-align: top; padding: 0 0 =
+0 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt;"><table style=3D"border-collapse: collapse; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt;" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"f=
+ont-size: 0px; padding: 10px 25px; padding-top: 0px; padding-bottom: 0=
+px; word-break: break-word; border-collapse: collapse; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt;" align=3D"left"><div style=3D"font-fami=
+ly:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:=
+1;text-align:left;color:#000000;"><p class=3D"text-build-content" styl=
+e=3D"margin: 13px 0; margin-top: 10px; margin-bottom: 10px; display: b=
+lock;" data-testid=3D"_NFoy6kk_"><span style=3D"color:#999999;">&#169;=
+2021-2022 GETTR, Inc.</span></p></div></td></tr></tbody></table></td><=
+/tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![endif=
+]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></tabl=
+e><![endif]--></div><img src=3D"https://ea.pstmrk.it/open/v3_RKWXOJGZu=
+5NPk-a18qYmzWJDXiRlkxLgUJvbR5s0Camq5EPW01FLnJMaGNUaIDW0sdXhX5a0aZktGat=
+x51t8DMtPT6AxMSNdC8eAXtQQK5DmcA0ZrQDa8RQU_lnQhmCM2QfOcWU1GTBgyr_cOjkc7=
+evFPxp2QSwGlmoTrm6yL4IrCwuFtmrtpguOSw_8dDNwH57dqol0sHvTg1U3cSwy18BOhtD=
+yuT-RiwkfVBayKEVPAwUYv9G-ThnjgZ9jkhg2q4xtFwPmd3iZsO7rHy2IyjGC9xGPfqwWG=
+QHFaHk8xxfwH-5m9ygv4f6JvjcVu-WDpOGwH2YUcwxle1VThpydzFtuMR1vXOgUJV24K6q=
+4tCsGeLVoSZuG4iB1hlTxHOpYVhE-QLbFbg1DNkCelwaYv6PmJjk-AFX2Pc15BGuLBE7Cp=
+JhVrp5bBSBDuEMxPOgj" width=3D"1" height=3D"1" border=3D"0" alt=3D"" />=
+</body></html>

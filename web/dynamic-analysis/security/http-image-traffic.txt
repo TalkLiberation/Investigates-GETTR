@@ -1,0 +1,48 @@
+677    5.931959972    192.168.1.109    172.64.199.29    HTTP    450    GET /wp-content/uploads/2022/01/fbi-agents.jpg HTTP/1.1 
+
+Hypertext Transfer Protocol
+    GET /wp-content/uploads/2022/01/fbi-agents.jpg HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET /wp-content/uploads/2022/01/fbi-agents.jpg HTTP/1.1\r\n]
+        Request Method: GET
+        Request URI: /wp-content/uploads/2022/01/fbi-agents.jpg
+        Request Version: HTTP/1.1
+    Host: republicbrief.com\r\n
+    User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0\r\n
+    Accept: image/webp,*/*\r\n
+    Accept-Language: en-US,en;q=0.5\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Connection: keep-alive\r\n
+    If-Modified-Since: Wed, 05 Jan 2022 18:05:13 GMT\r\n
+    If-None-Match: "61d5ddd9-25683"\r\n
+    Cache-Control: max-age=0\r\n
+    \r\n
+    [Full request URI: http://republicbrief.com/wp-content/uploads/2022/01/fbi-agents.jpg]
+    [HTTP request 1/1]
+    [Response in frame: 732]
+
+0000   47 45 54 20 2f 77 70 2d 63 6f 6e 74 65 6e 74 2f   GET /wp-content/
+0010   75 70 6c 6f 61 64 73 2f 32 30 32 32 2f 30 31 2f   uploads/2022/01/
+0020   66 62 69 2d 61 67 65 6e 74 73 2e 6a 70 67 20 48   fbi-agents.jpg H
+0030   54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 72   TTP/1.1..Host: r
+0040   65 70 75 62 6c 69 63 62 72 69 65 66 2e 63 6f 6d   epublicbrief.com
+0050   0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a 20 4d 6f   ..User-Agent: Mo
+0060   7a 69 6c 6c 61 2f 35 2e 30 20 28 58 31 31 3b 20   zilla/5.0 (X11; 
+0070   55 62 75 6e 74 75 3b 20 4c 69 6e 75 78 20 78 38   Ubuntu; Linux x8
+0080   36 5f 36 34 3b 20 72 76 3a 38 31 2e 30 29 20 47   6_64; rv:81.0) G
+0090   65 63 6b 6f 2f 32 30 31 30 30 31 30 31 20 46 69   ecko/20100101 Fi
+00a0   72 65 66 6f 78 2f 38 31 2e 30 0d 0a 41 63 63 65   refox/81.0..Acce
+00b0   70 74 3a 20 69 6d 61 67 65 2f 77 65 62 70 2c 2a   pt: image/webp,*
+00c0   2f 2a 0d 0a 41 63 63 65 70 74 2d 4c 61 6e 67 75   /*..Accept-Langu
+00d0   61 67 65 3a 20 65 6e 2d 55 53 2c 65 6e 3b 71 3d   age: en-US,en;q=
+00e0   30 2e 35 0d 0a 41 63 63 65 70 74 2d 45 6e 63 6f   0.5..Accept-Enco
+00f0   64 69 6e 67 3a 20 67 7a 69 70 2c 20 64 65 66 6c   ding: gzip, defl
+0100   61 74 65 0d 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a   ate..Connection:
+0110   20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a 49 66 2d    keep-alive..If-
+0120   4d 6f 64 69 66 69 65 64 2d 53 69 6e 63 65 3a 20   Modified-Since: 
+0130   57 65 64 2c 20 30 35 20 4a 61 6e 20 32 30 32 32   Wed, 05 Jan 2022
+0140   20 31 38 3a 30 35 3a 31 33 20 47 4d 54 0d 0a 49    18:05:13 GMT..I
+0150   66 2d 4e 6f 6e 65 2d 4d 61 74 63 68 3a 20 22 36   f-None-Match: "6
+0160   31 64 35 64 64 64 39 2d 32 35 36 38 33 22 0d 0a   1d5ddd9-25683"..
+0170   43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6d   Cache-Control: m
+0180   61 78 2d 61 67 65 3d 30 0d 0a 0d 0a               ax-age=0....
+

@@ -1,0 +1,396 @@
+{
+  "api.gettr.com": {
+    "hostname": "api.gettr.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "blog.hubspot.com": {
+    "hostname": "blog.hubspot.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "blogger.googleusercontent.com": {
+    "hostname": "blogger.googleusercontent.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": true,
+    "thirdParties": []
+  },
+  "cards.odysee.com": {
+    "hostname": "cards.odysee.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": true,
+    "thirdParties": []
+  },
+  "cdn.americasvoice.news": {
+    "hostname": "cdn.americasvoice.news",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "cdn.jsdelivr.net": {
+    "hostname": "cdn.jsdelivr.net",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "cdn.substack.com": {
+    "hostname": "cdn.substack.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "connect.facebook.net": {
+    "hostname": "connect.facebook.net",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "d3n8a8pro7vhmx.cloudfront.net": {
+    "hostname": "d3n8a8pro7vhmx.cloudfront.net",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "ekr.zdassets.com": {
+    "hostname": "ekr.zdassets.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "fonts.gstatic.com": {
+    "hostname": "fonts.gstatic.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "gettr.com": {
+    "hostname": "gettr.com",
+    "firstPartyHostnames": false,
+    "firstParty": true,
+    "thirdParties": [
+      "api.gettr.com",
+      "recaptcha.net",
+      "www.gstatic.com",
+      "fonts.gstatic.com",
+      "purecatamphetamine.github.io",
+      "rsbnetwork.com",
+      "media.gettr.com",
+      "www.newsmax.com",
+      "media.gazetadopovo.com.br",
+      "gettr.count.ly",
+      "www.googleadservices.com",
+      "googleads.g.doubleclick.net",
+      "wa.appsflyer.com",
+      "www.google.com",
+      "media2.giphy.com",
+      "www.googletagmanager.com",
+      "websdk.appsflyer.com",
+      "static.zdassets.com",
+      "connect.facebook.net",
+      "images.nordbayern.de",
+      "ekr.zdassets.com",
+      "www.rightattitudes.com",
+      "upload.wikimedia.org",
+      "www.gov.br",
+      "i.insider.com",
+      "blog.hubspot.com",
+      "gettr.zendesk.com",
+      "wa.onelink.me",
+      "unpkg.com",
+      "cdn.substack.com",
+      "cards.odysee.com",
+      "blogger.googleusercontent.com",
+      "twemoji.maxcdn.com",
+      "cdn.americasvoice.news",
+      "img.theepochtimes.com",
+      "img.ntd.com",
+      "www.thegatewaypundit.com",
+      "i.ytimg.com",
+      "d3n8a8pro7vhmx.cloudfront.net",
+      "thefederalist.com",
+      "sp.rmbl.ws",
+      "nypost.com",
+      "cdn.jsdelivr.net"
+    ]
+  },
+  "gettr.count.ly": {
+    "hostname": "gettr.count.ly",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "gettr.zendesk.com": {
+    "hostname": "gettr.zendesk.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "googleads.g.doubleclick.net": {
+    "hostname": "googleads.g.doubleclick.net",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "i.insider.com": {
+    "hostname": "i.insider.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "i.ytimg.com": {
+    "hostname": "i.ytimg.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "images.nordbayern.de": {
+    "hostname": "images.nordbayern.de",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": true,
+    "thirdParties": []
+  },
+  "img.ntd.com": {
+    "hostname": "img.ntd.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "img.theepochtimes.com": {
+    "hostname": "img.theepochtimes.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "media.gazetadopovo.com.br": {
+    "hostname": "media.gazetadopovo.com.br",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "media.gettr.com": {
+    "hostname": "media.gettr.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": true,
+    "thirdParties": []
+  },
+  "media2.giphy.com": {
+    "hostname": "media2.giphy.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "nypost.com": {
+    "hostname": "nypost.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "purecatamphetamine.github.io": {
+    "hostname": "purecatamphetamine.github.io",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "recaptcha.net": {
+    "hostname": "recaptcha.net",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "rsbnetwork.com": {
+    "hostname": "rsbnetwork.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "sp.rmbl.ws": {
+    "hostname": "sp.rmbl.ws",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "static.zdassets.com": {
+    "hostname": "static.zdassets.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "thefederalist.com": {
+    "hostname": "thefederalist.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "twemoji.maxcdn.com": {
+    "hostname": "twemoji.maxcdn.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "unpkg.com": {
+    "hostname": "unpkg.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "upload.wikimedia.org": {
+    "hostname": "upload.wikimedia.org",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "wa.appsflyer.com": {
+    "hostname": "wa.appsflyer.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "wa.onelink.me": {
+    "hostname": "wa.onelink.me",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "websdk.appsflyer.com": {
+    "hostname": "websdk.appsflyer.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.google.com": {
+    "hostname": "www.google.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.googleadservices.com": {
+    "hostname": "www.googleadservices.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.googletagmanager.com": {
+    "hostname": "www.googletagmanager.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.gov.br": {
+    "hostname": "www.gov.br",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.gstatic.com": {
+    "hostname": "www.gstatic.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.newsmax.com": {
+    "hostname": "www.newsmax.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.rightattitudes.com": {
+    "hostname": "www.rightattitudes.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  },
+  "www.thegatewaypundit.com": {
+    "hostname": "www.thegatewaypundit.com",
+    "firstPartyHostnames": [
+      "gettr.com"
+    ],
+    "firstParty": false,
+    "thirdParties": []
+  }
+}
