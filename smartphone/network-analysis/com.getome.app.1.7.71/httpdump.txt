@@ -1,0 +1,52 @@
+DNS-QUERY at 1641721730353
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1641721730357
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	30	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1641721730359
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1641721730371
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	68	IN	A	142.251.36.131
+
