@@ -5,7 +5,7 @@ https://talkliberation.com/gettr
 
 [This repository](https://talkliberation.com/gettr-repo) contains supporting material for an investigation by [Talk Liberation](https://talkliberation.substack.com) into the [GETTR](https://en.wikipedia.org/wiki/Gettr) social media platform and smartphone apps conducted in January 2022.
 
-All of these files were obtained via technical analyis with freely-available and Free and Open-Source Software (FOSS) tools, and none of the published information was obtained via leaks, hacking, or data breaches.
+All of these files were generated via technical analyis with freely-available and Free and Open-Source Software (FOSS) tools, and none of the published information was obtained via leaks, hacking, or data breaches.
 
 Talk Liberation encourages readers to independently validate this work and to develop it further. The information here is provided for context as well as journalistic and technical exploration beyond the scope of our initial investigation.
 
