@@ -1,0 +1,34 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljava/lang/reflect/AccessibleObject;->setAccessible()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/gson/internal/m/c;->b()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/gson/internal/m/a;->b()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/google/gson/internal/m/c;->b()" -> "Ljava/lang/reflect/AccessibleObject;->setAccessible()" [constraint=true]
+	"Lcom/google/gson/internal/m/a;->b()" -> "Ljava/lang/reflect/AccessibleObject;->setAccessible()" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/google/gson/internal/m/c;->b()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/gson/internal/m/a;->b()" [color="#a991d4" fontcolor=white]
+	}
+}

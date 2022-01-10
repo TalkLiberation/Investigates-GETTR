@@ -1,0 +1,86 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljava/lang/reflect/AccessibleObject;->isAnnotationPresent()" [color="#593196" fontcolor=white]
+	"Ljava/lang/reflect/AccessibleObject;->getAnnotation()" [color="#593196" fontcolor=white]
+	"Ljava/lang/reflect/AccessibleObject;->setAccessible()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/database/DataSnapshot;->getValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/MutableData;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/DatabaseReference;->updateChildren()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/ktx/DatabaseKt;->getValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/OnDisconnect;->removeValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/h/a/e/a$a;->onDataChange()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/DatabaseReference;->removeValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/DatabaseReference;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/OnDisconnect;->removeValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/MutableData;->getValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/DatabaseReference;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/ktx/DatabaseKt;->getValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/DatabaseReference;->updateChildren()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/DatabaseReference;->removeValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/gson/internal/reflect/PreJava9ReflectionAccessor;->makeAccessible()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/gson/internal/reflect/UnsafeReflectionAccessor;->makeAccessible()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/google" -> "Ljava/lang/reflect/AccessibleObject;->isAnnotationPresent()" [constraint=true]
+	"Lcom/google" -> "Ljava/lang/reflect/AccessibleObject;->getAnnotation()" [constraint=true]
+	"Lcom/google/firebase/database/DataSnapshot;->getValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/MutableData;->setValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/OnDisconnect;->setValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/DatabaseReference;->setValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/MutableData;->getValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/DatabaseReference;->updateChildren()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/ktx/DatabaseKt;->getValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/OnDisconnect;->removeValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/banuba/sdk/h/a/e/a$a;->onDataChange()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/database/DatabaseReference;->removeValue()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/gson/internal/reflect/PreJava9ReflectionAccessor;->makeAccessible()" -> "Ljava/lang/reflect/AccessibleObject;->setAccessible()" [constraint=true]
+	"Lcom/google/gson/internal/reflect/UnsafeReflectionAccessor;->makeAccessible()" -> "Ljava/lang/reflect/AccessibleObject;->setAccessible()" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/google/firebase/database/DataSnapshot;->getValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/MutableData;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/DatabaseReference;->updateChildren()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/ktx/DatabaseKt;->getValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/OnDisconnect;->removeValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/h/a/e/a$a;->onDataChange()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/DatabaseReference;->removeValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/DatabaseReference;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/OnDisconnect;->removeValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/MutableData;->getValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/DatabaseReference;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/ktx/DatabaseKt;->getValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/DatabaseReference;->updateChildren()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/DatabaseReference;->removeValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/database/OnDisconnect;->setValue()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/gson/internal/reflect/PreJava9ReflectionAccessor;->makeAccessible()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/gson/internal/reflect/UnsafeReflectionAccessor;->makeAccessible()" [color="#a991d4" fontcolor=white]
+	}
+}

@@ -1,0 +1,242 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljava/lang/Runtime;->availableProcessors()" [color="#593196" fontcolor=white]
+	"Ljava/lang/Runtime;->freeMemory()" [color="#593196" fontcolor=white]
+	"Ljava/lang/Runtime;->maxMemory()" [color="#593196" fontcolor=white]
+	"Ljava/lang/Runtime;->totalMemory()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lh/l/a/b/e/a;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newSourceExecutor()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/model/stream/MediaStoreImageThumbLoader;->buildLoadData()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/Glide;->with()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/gif/GifDrawable;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lorg/gsuite/flutter_gtv_image/image/h;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lh/g/f/c;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/getter/video/edit/l/a;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/j/m/a$h0;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newSourceExecutor()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/bitmap/DrawableTransformation;->transform()" [color="#a991d4" fontcolor=white]
+			"Ld0/a/a/c/d;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lorg/gsuite/flutter_gtv_image/image/e;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/mlkit/common/internal/c;->create()" [color="#a991d4" fontcolor=white]
+			"Ld0/a/a/c/d$r;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/bitmap/VideoBitmapDecoder;-><init>()" [color="#a991d4" fontcolor=white]
+			"Ld0/a/a/c/d$s;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lorg/getter/g/b;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Ld0/a/a/c/d$t;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/gallery/ui/l$g;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lf/a;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/manager/RequestManagerFragment;->onAttach()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/bitmap/BitmapTransformation;->transform()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/model/stream/MediaStoreVideoThumbLoader;->buildLoadData()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/imagepipeline/memory/m;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newAnimationExecutor()" [color="#a991d4" fontcolor=white]
+			"Ld0/a/a/c/d$y;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/bitmap/LazyBitmapDrawableResource;->obtain()" [color="#a991d4" fontcolor=white]
+			"Lly/img/android/pesdk/utils/ThreadUtils;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder;->decode()" [color="#a991d4" fontcolor=white]
+			"Ly/z;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lkotlinx/coroutines/a0;->N0()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/Glide;->init()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/i/e/a$a$k;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/load/resource/gif/GifDrawableTransformation;->transform()" [color="#a991d4" fontcolor=white]
+			"Lkotlinx/coroutines/internal/d0;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lly/img/android/pesdk/backend/operator/rox/saver/RoxSaverJPEG;->startExport()" [color="#a991d4" fontcolor=white]
+			"Lly/img/android/pesdk/backend/model/state/FocusSettings;->u0()" [color="#a991d4" fontcolor=white]
+			"Lly/img/android/pesdk/backend/model/state/layer/TextDesignLayerSettings;->u0()" [color="#a991d4" fontcolor=white]
+			"Lly/img/android/v/g/e$b;->run()" [color="#a991d4" fontcolor=white]
+			"Lly/img/android/pesdk/utils/o0;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/giphy/sdk/ui/l$a;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/j0/d/l;->get()" [color="#a991d4" fontcolor=white]
+			"Lcom/giphy/sdk/ui/views/GifView$f;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/imagepipeline/memory/d;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lio/sentry/android/core/DefaultAndroidEventProcessor;->process()" [color="#a991d4" fontcolor=white]
+			"Lio/sentry/android/core/DefaultAndroidEventProcessor;->process()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lorg/gsuite/flutter_gtv_image/image/h$a;->run()" [color="#a991d4" fontcolor=white]
+			"Lorg/getter/f/c;->run()" [color="#a991d4" fontcolor=white]
+			"Lorg/gsuite/flutter_gtv_image/image/g;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$c;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$a;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/i$e;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$d;->run()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_callable {
+			label=Callable
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$9;->call()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$2;->call()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_fragment {
+			label=Fragment
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/bumptech/glide/manager/SupportRequestManagerFragment;->onAttach()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/banuba" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/banuba" -> "Lcom/bumptech" [constraint=true]
+	"Lh/l/a/b/e/a;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newSourceExecutor()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/bumptech" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/facebook" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/facebook" -> "Ljava/lang/Runtime;->maxMemory()" [constraint=true]
+	"Lh/x" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/bumptech/glide/load/model/stream/MediaStoreImageThumbLoader;->buildLoadData()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/bumptech/glide/Glide;->with()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/google" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/gif/GifDrawable;-><init>()" -> "Lcom/bumptech" [constraint=true]
+	"Lorg/gsuite/flutter_gtv_image/image/h;->onMethodCall()" -> "Lorg/gsuite" [constraint=true]
+	"Lorg/gsuite" -> "Lcom/bumptech" [constraint=true]
+	"Lh/g/f/c;->onMethodCall()" -> "Lh/x" [constraint=true]
+	"Lcom/getter/video/edit/l/a;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/banuba/sdk/j/m/a$h0;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newAnimationExecutor()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/bitmap/DrawableTransformation;->transform()" -> "Lcom/bumptech" [constraint=true]
+	"Ld0/a/a/c/d;->onMethodCall()" -> "Lcom/bumptech" [constraint=true]
+	"Ld0/a" -> "Lcom/bumptech" [constraint=true]
+	"Lorg/gsuite/flutter_gtv_image/image/e;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	Lkotlinx -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/google/mlkit/common/internal/c;->create()" -> "Lh/n" [constraint=true]
+	"Lh/n" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Ld0/a/a/c/d$r;->invoke()" -> "Ld0/a" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/bitmap/VideoBitmapDecoder;-><init>()" -> "Lcom/bumptech" [constraint=true]
+	"Lorg/gsuite/flutter_gtv_image/image/h$a;->run()" -> "Lorg/gsuite" [constraint=true]
+	"Ld0/a/a/c/d$s;->invoke()" -> "Ld0/a" [constraint=true]
+	"Lorg/getter/g/b;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Ld0/a/a/c/d$t;->invoke()" -> "Ld0/a" [constraint=true]
+	Lcom -> "Lcom/facebook" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder;-><init>()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder;->decode()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$9;->call()" -> "Lcom/google" [constraint=true]
+	"Lcom/banuba/sdk/gallery/ui/l$g;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lorg/getter" -> "Lorg/gsuite" [constraint=true]
+	"Lf/a;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lcom/bumptech/glide/manager/SupportRequestManagerFragment;->onAttach()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/bumptech/glide/manager/RequestManagerFragment;->onAttach()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/bitmap/BitmapTransformation;->transform()" -> "Lcom/bumptech" [constraint=true]
+	"Lorg/getter/f/c;->run()" -> "Lorg/getter" [constraint=true]
+	"Lorg/gsuite/flutter_gtv_image/image/g;->run()" -> "Lorg/gsuite" [constraint=true]
+	"Lcom/bumptech/glide/load/model/stream/MediaStoreVideoThumbLoader;->buildLoadData()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/facebook/imagepipeline/memory/m;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lly/img" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lly/img" -> "Ljava/lang/Runtime;->freeMemory()" [constraint=true]
+	"Lly/img" -> "Ljava/lang/Runtime;->maxMemory()" [constraint=true]
+	"Lly/img" -> "Ljava/lang/Runtime;->totalMemory()" [constraint=true]
+	"Ld0/a/a/c/d$y;->invoke()" -> "Ld0/a" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/bitmap/LazyBitmapDrawableResource;->obtain()" -> "Lcom/bumptech" [constraint=true]
+	"Lly/img/android/pesdk/utils/ThreadUtils;-><clinit>()" -> "Lly/img" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$2;->call()" -> "Lcom/google" [constraint=true]
+	"Ly/z;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lkotlinx/coroutines/a0;->N0()" -> Lkotlinx [constraint=true]
+	"Lcom/facebook/z/e$c;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/z/e$a;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/bumptech/glide/Glide;->init()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/banuba/sdk/i/e/a$a$k;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/facebook/i$e;->run()" -> Lcom [constraint=true]
+	"Lcom/facebook/z/e$d;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/bumptech/glide/load/resource/gif/GifDrawableTransformation;->transform()" -> "Lcom/bumptech" [constraint=true]
+	"Lkotlinx/coroutines/internal/d0;-><clinit>()" -> "Ljava/lang/Runtime;->availableProcessors()" [constraint=true]
+	"Lly/img/android/pesdk/backend/operator/rox/saver/RoxSaverJPEG;->startExport()" -> "Lly/img" [constraint=true]
+	"Lly/img/android/pesdk/backend/model/state/FocusSettings;->u0()" -> "Lly/img" [constraint=true]
+	"Lly/img/android/pesdk/backend/model/state/layer/TextDesignLayerSettings;->u0()" -> "Lly/img" [constraint=true]
+	"Lly/img/android/v/g/e$b;->run()" -> "Lly/img" [constraint=true]
+	"Lly/img/android/pesdk/utils/o0;-><clinit>()" -> "Lly/img" [constraint=true]
+	"Lcom/giphy/sdk/ui/l$a;->invoke()" -> "Lcom/giphy" [constraint=true]
+	"Lcom/giphy" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/j0/d/l;->get()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/giphy/sdk/ui/views/GifView$f;->invoke()" -> "Lcom/giphy" [constraint=true]
+	"Lcom/facebook/imagepipeline/memory/d;-><clinit>()" -> "Lcom/facebook" [constraint=true]
+	"Lio/sentry/android/core/DefaultAndroidEventProcessor;->process()" -> "Lio/sentry" [constraint=true]
+	"Lio/sentry" -> "Ljava/lang/Runtime;->totalMemory()" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lh/l/a/b/e/a;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newSourceExecutor()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/model/stream/MediaStoreImageThumbLoader;->buildLoadData()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/Glide;->with()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/gif/GifDrawable;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lorg/gsuite/flutter_gtv_image/image/h;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lh/g/f/c;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/getter/video/edit/l/a;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/j/m/a$h0;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newSourceExecutor()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/bitmap/DrawableTransformation;->transform()" [color="#a991d4" fontcolor=white]
+		"Ld0/a/a/c/d;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lorg/gsuite/flutter_gtv_image/image/e;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/mlkit/common/internal/c;->create()" [color="#a991d4" fontcolor=white]
+		"Ld0/a/a/c/d$r;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/bitmap/VideoBitmapDecoder;-><init>()" [color="#a991d4" fontcolor=white]
+		"Ld0/a/a/c/d$s;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lorg/getter/g/b;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Ld0/a/a/c/d$t;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/gallery/ui/l$g;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lf/a;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/manager/RequestManagerFragment;->onAttach()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/bitmap/BitmapTransformation;->transform()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/model/stream/MediaStoreVideoThumbLoader;->buildLoadData()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/imagepipeline/memory/m;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/engine/executor/GlideExecutor;->newAnimationExecutor()" [color="#a991d4" fontcolor=white]
+		"Ld0/a/a/c/d$y;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/bitmap/LazyBitmapDrawableResource;->obtain()" [color="#a991d4" fontcolor=white]
+		"Lly/img/android/pesdk/utils/ThreadUtils;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder;->decode()" [color="#a991d4" fontcolor=white]
+		"Ly/z;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lkotlinx/coroutines/a0;->N0()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/Glide;->init()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/i/e/a$a$k;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/load/resource/gif/GifDrawableTransformation;->transform()" [color="#a991d4" fontcolor=white]
+		"Lkotlinx/coroutines/internal/d0;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lly/img/android/pesdk/backend/operator/rox/saver/RoxSaverJPEG;->startExport()" [color="#a991d4" fontcolor=white]
+		"Lly/img/android/pesdk/backend/model/state/FocusSettings;->u0()" [color="#a991d4" fontcolor=white]
+		"Lly/img/android/pesdk/backend/model/state/layer/TextDesignLayerSettings;->u0()" [color="#a991d4" fontcolor=white]
+		"Lly/img/android/v/g/e$b;->run()" [color="#a991d4" fontcolor=white]
+		"Lly/img/android/pesdk/utils/o0;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/giphy/sdk/ui/l$a;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/j0/d/l;->get()" [color="#a991d4" fontcolor=white]
+		"Lcom/giphy/sdk/ui/views/GifView$f;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/imagepipeline/memory/d;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lio/sentry/android/core/DefaultAndroidEventProcessor;->process()" [color="#a991d4" fontcolor=white]
+		"Lio/sentry/android/core/DefaultAndroidEventProcessor;->process()" [color="#a991d4" fontcolor=white]
+	}
+}

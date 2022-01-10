@@ -1,0 +1,179 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [color="#593196" fontcolor=white]
+	"Landroid/webkit/WebView;->addJavascriptInterface()" [color="#593196" fontcolor=white]
+	"Landroid/webkit/WebView;->loadUrl()" [color="#593196" fontcolor=white]
+	"Landroid/webkit/WebView;->loadUrl()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/facebook/internal/c0;->onCreate()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/FlutterWebViewFactory;->create()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/InAppWebViewMethodHandler;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebView;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/webviewflutter/FlutterWebViewFactory;->create()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/webviewflutter/FlutterWebView;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebViewManager;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/PlayerView;->setCustomMessageHandler()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/JavaScriptBridgeInterface$2$1;->success()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity$1;->onQueryTextSubmit()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->success()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/internal/k;->cancel()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewChromeClient;->onProgressChanged()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->error()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->notImplemented()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/webviewflutter/FlutterWebViewClient$OnNavigationRequestResult;->success()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lly/count/android/sdk/ModuleFeedback$2;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/n;->run()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/ModuleRatings$4$1;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/ui/k;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebView$10;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlockerHandler$2;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/ui/i;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/ui/CustomMessageHandler$a;->run()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_webview_client {
+			label="Webview Client"
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lio/flutter/plugins/urllauncher/WebViewActivity$FlutterWebChromeClient$1;->shouldOverrideUrlLoading()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/urllauncher/WebViewActivity$2;->shouldOverrideUrlLoading()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient;->onPageStarted()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/urllauncher/WebViewActivity$2;->shouldOverrideUrlLoading()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/webviewflutter/FlutterWebView$FlutterWebChromeClient$1;->shouldOverrideUrlLoading()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/webviewflutter/FlutterWebView$FlutterWebChromeClient$1;->shouldOverrideUrlLoading()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/urllauncher/WebViewActivity$FlutterWebChromeClient$1;->shouldOverrideUrlLoading()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient;->onPageFinished()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient;->onReceivedError()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_task {
+			label=Task
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/facebook/internal/c0$h;->onPostExecute()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_activity {
+			label=Activity
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->onCreate()" [color="#a991d4" fontcolor=white]
+			"Lzendesk/support/guide/ViewArticleActivity;->onCreate()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/urllauncher/WebViewActivity;->onCreate()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->closeButtonClicked()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->onDestroy()" [color="#a991d4" fontcolor=white]
+			"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->onKeyDown()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/bitmovin" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lcom/bitmovin" -> "Landroid/webkit/WebView;->addJavascriptInterface()" [constraint=true]
+	"Lcom/bitmovin" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lcom/pichillilorenzo" -> "Landroid/webkit/WebView;->addJavascriptInterface()" [constraint=true]
+	"Lcom/pichillilorenzo" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lio/flutter" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lio/flutter" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lio/flutter" -> "Landroid/webkit/WebView;->addJavascriptInterface()" [constraint=true]
+	"Lcom/facebook/internal/c0;->onCreate()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lcom/facebook" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/FlutterWebViewFactory;->create()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lly/count/android/sdk/ModuleFeedback$2;->run()" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lly/count/android/sdk/ModuleFeedback$2;->run()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->onCreate()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/InAppWebViewMethodHandler;->onMethodCall()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lzendesk/support/guide/ViewArticleActivity;->onCreate()" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lcom/bitmovin/player/n;->run()" -> "Lcom/bitmovin" [constraint=true]
+	"Lly/count/android/sdk/ModuleRatings$4$1;->run()" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lly/count/android/sdk/ModuleRatings$4$1;->run()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebView;->onMethodCall()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/facebook/internal/c0$h;->onPostExecute()" -> "Lcom/facebook" [constraint=true]
+	"Lio/flutter/plugins/urllauncher/WebViewActivity;->onCreate()" -> "Landroid/webkit/WebSettings;->setJavaScriptEnabled()" [constraint=true]
+	"Lio/flutter/plugins/urllauncher/WebViewActivity;->onCreate()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lio/flutter/plugins/webviewflutter/FlutterWebViewFactory;->create()" -> "Lio/flutter" [constraint=true]
+	"Lio/flutter/plugins/webviewflutter/FlutterWebView;->onMethodCall()" -> "Lio/flutter" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebViewManager;->onMethodCall()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/bitmovin/player/PlayerView;->setCustomMessageHandler()" -> "Lcom/bitmovin" [constraint=true]
+	"Lio/flutter/plugins/urllauncher/WebViewActivity$FlutterWebChromeClient$1;->shouldOverrideUrlLoading()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/JavaScriptBridgeInterface$2$1;->success()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/bitmovin/player/ui/k;->run()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity$1;->onQueryTextSubmit()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lio/flutter/plugins/urllauncher/WebViewActivity$2;->shouldOverrideUrlLoading()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient;->onPageStarted()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->success()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lio/flutter/plugins/webviewflutter/FlutterWebView$FlutterWebChromeClient$1;->shouldOverrideUrlLoading()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->closeButtonClicked()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/facebook/internal/k;->cancel()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebView$10;->run()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewChromeClient;->onProgressChanged()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->onDestroy()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/content_blocker/ContentBlockerHandler$2;->run()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/bitmovin/player/ui/i;->run()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/player/ui/CustomMessageHandler$a;->run()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->error()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->notImplemented()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lio/flutter/plugins/webviewflutter/FlutterWebViewClient$OnNavigationRequestResult;->success()" -> "Lio/flutter" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient;->onPageFinished()" -> "Lcom/pichillilorenzo" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient;->onPageFinished()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient;->onReceivedError()" -> "Landroid/webkit/WebView;->loadUrl()" [constraint=true]
+	"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity;->onKeyDown()" -> "Lcom/pichillilorenzo" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/facebook/internal/c0;->onCreate()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/FlutterWebViewFactory;->create()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/InAppWebViewMethodHandler;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebView;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/webviewflutter/FlutterWebViewFactory;->create()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/webviewflutter/FlutterWebView;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/headless_in_app_webview/HeadlessInAppWebViewManager;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/player/PlayerView;->setCustomMessageHandler()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/JavaScriptBridgeInterface$2$1;->success()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/in_app_browser/InAppBrowserActivity$1;->onQueryTextSubmit()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->success()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/internal/k;->cancel()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewChromeClient;->onProgressChanged()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->error()" [color="#a991d4" fontcolor=white]
+		"Lcom/pichillilorenzo/flutter_inappwebview/in_app_webview/InAppWebViewClient$1;->notImplemented()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/webviewflutter/FlutterWebViewClient$OnNavigationRequestResult;->success()" [color="#a991d4" fontcolor=white]
+	}
+}

@@ -1,0 +1,106 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljavax/crypto/Cipher;->getInstance()" [color="#593196" fontcolor=white]
+	"Ljavax/crypto/Cipher;->getInstance()" [color="#593196" fontcolor=white]
+	"Ljavax/crypto/Cipher;->init()" [color="#593196" fontcolor=white]
+	"Ljavax/crypto/Cipher;->doFinal()" [color="#593196" fontcolor=white]
+	"Ljavax/crypto/Cipher;->init()" [color="#593196" fontcolor=white]
+	"Ljavax/crypto/Cipher;->init()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/bitmovin/player/b;->load()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/b;->load()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/source/hls/d;->q()" [color="#a991d4" fontcolor=white]
+			"Ls/b;-><clinit>()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/offline/service/i;->onStartCommand()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/offline/service/r$d;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/api/offline/OfflineContentManager$Companion;->getOfflineContentManager()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/source/hls/d;->open()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/upstream/o0/o$b;->b()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/upstream/o0/o$b;->g()" [color="#a991d4" fontcolor=white]
+			"Lj/e;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_2018_07_26_18_48_17_144x256_ivan_upsample;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/Segmentation_BrowBackground_NCHW_2019_1_7;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lj/e;->a()" [color="#a991d4" fontcolor=white]
+			"Lj/f;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_hair_exp_0009_val_v2_256_144_acc_0_957_loss_0_110;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lj/f;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_13_EyeIris_96x96_v03_PrunerFine_2019_01_02__0_9967145_00000108686;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/NHW_C4_CheckEspresso_UNET_YCbCrA_IRImax_staged_2019_02_11;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_TEST_PRIOR_yuv_val_v2_256_144_acc_0_966_loss_0_091;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_epoch_2003_time_1538439193_53_res_256x144x4;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_13_Lip_128x128_v01_PrunerFine_2019_02_12__0_9767310;-><init>()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/bitmovin" -> "Ljavax/crypto/Cipher;->getInstance()" [constraint=true]
+	"Lcom/bitmovin" -> "Ljavax/crypto/Cipher;->init()" [constraint=true]
+	"Lcom/bitmovin/player/b;->load()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/google/android/exoplayer2/source/hls/d;->q()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/source/hls/d;->q()" -> "Ljavax/crypto/Cipher;->init()" [constraint=true]
+	"Lcom/google" -> "Ljavax/crypto/Cipher;->getInstance()" [constraint=true]
+	"Ls/b;-><clinit>()" -> "Ljavax/crypto/Cipher;->getInstance()" [constraint=true]
+	"Ls/b;-><clinit>()" -> "Ljavax/crypto/Cipher;->init()" [constraint=true]
+	"Lcom/bitmovin/player/offline/service/i;->onStartCommand()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/player/offline/service/r$d;->invoke()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/player/api/offline/OfflineContentManager$Companion;->getOfflineContentManager()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/source/hls/d;->open()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/source/hls/d;->open()" -> "Ljavax/crypto/Cipher;->init()" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/upstream/o0/o$b;->b()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/upstream/o0/o$b;->g()" -> "Lcom/bitmovin" [constraint=true]
+	"Lj/e;->a()" -> "" [constraint=true]
+	"" -> "Lcom/banuba" [constraint=true]
+	"" -> "Ljavax/crypto/Cipher;->doFinal()" [constraint=true]
+	"Lcom/banuba" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_2018_07_26_18_48_17_144x256_ivan_upsample;-><init>()" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/Segmentation_BrowBackground_NCHW_2019_1_7;-><init>()" -> "" [constraint=true]
+	"Lj/f;->a()" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_hair_exp_0009_val_v2_256_144_acc_0_957_loss_0_110;-><init>()" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_13_EyeIris_96x96_v03_PrunerFine_2019_01_02__0_9967145_00000108686;-><init>()" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_13_EyeIris_96x96_v03_PrunerFine_2019_01_02__0_9967145_00000108686;-><init>()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_CheckEspresso_UNET_YCbCrA_IRImax_staged_2019_02_11;-><init>()" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_TEST_PRIOR_yuv_val_v2_256_144_acc_0_966_loss_0_091;-><init>()" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_epoch_2003_time_1538439193_53_res_256x144x4;-><init>()" -> "" [constraint=true]
+	"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_13_Lip_128x128_v01_PrunerFine_2019_02_12__0_9767310;-><init>()" -> "" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/bitmovin/player/b;->load()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/player/b;->load()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/source/hls/d;->q()" [color="#a991d4" fontcolor=white]
+		"Ls/b;-><clinit>()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/player/offline/service/i;->onStartCommand()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/player/offline/service/r$d;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/player/api/offline/OfflineContentManager$Companion;->getOfflineContentManager()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/source/hls/d;->open()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/upstream/o0/o$b;->b()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/upstream/o0/o$b;->g()" [color="#a991d4" fontcolor=white]
+		"Lj/e;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_2018_07_26_18_48_17_144x256_ivan_upsample;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/Segmentation_BrowBackground_NCHW_2019_1_7;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lj/e;->a()" [color="#a991d4" fontcolor=white]
+		"Lj/f;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_hair_exp_0009_val_v2_256_144_acc_0_957_loss_0_110;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lj/f;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_13_EyeIris_96x96_v03_PrunerFine_2019_01_02__0_9967145_00000108686;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/NHW_C4_CheckEspresso_UNET_YCbCrA_IRImax_staged_2019_02_11;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_TEST_PRIOR_yuv_val_v2_256_144_acc_0_966_loss_0_091;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_11_epoch_2003_time_1538439193_53_res_256x144x4;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/tech/demo/nn/NHW_C4_2019_02_13_Lip_128x128_v01_PrunerFine_2019_02_12__0_9767310;-><init>()" [color="#a991d4" fontcolor=white]
+	}
+}

@@ -1,0 +1,167 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/net/ConnectivityManager;->getActiveNetworkInfo()" [color="#593196" fontcolor=white]
+	"Landroid/net/ConnectivityManager;->getNetworkInfo()" [color="#593196" fontcolor=white]
+	"Landroid/net/ConnectivityManager;->getNetworkInfo()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lzendesk/core/NetworkUtils;->isConnected()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/h9;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/n9;->a()" [color="#a991d4" fontcolor=white]
+			"Lzendesk/core/NetworkUtils;->isMobile()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/manager/DefaultConnectivityMonitor;->onStart()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/o9;->a()" [color="#a991d4" fontcolor=white]
+			"Lzendesk/core/ZendeskNetworkInfoProvider;->isNetworkAvailable()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/upstream/r;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/scheduler/PlatformScheduler$PlatformSchedulerService;->onStartJob()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/connectivity/ConnectivityMethodChannelHandler;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/datatransport/cct/d;->b()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/crashlytics/d;->create()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/android/gms/measurement/internal/j5;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/scheduler/a;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/a5;->run()" [color="#a991d4" fontcolor=white]
+			"Lzendesk/core/ZendeskNetworkInfoProvider$1$1;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/g5;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/scheduler/b;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/k5;->run()" [color="#a991d4" fontcolor=white]
+			"Lzendesk/core/ZendeskNetworkInfoProvider$1$2;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/messaging/SyncTask;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/i5;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/messaging/TopicsSyncTask;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/q9;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/e;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/m9;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/o5;->run()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/connectivity/ConnectivityBroadcastReceiver$2;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/z4;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/upstream/b;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/t8;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/c6;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/v3;->run()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_receiver {
+			label=Receiver
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lzendesk/core/ZendeskNetworkInfoProvider$NetworkAvailabilityBroadcastReceiver;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/connectivity/ConnectivityBroadcastReceiver;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/messaging/SyncTask$ConnectivityChangeReceiver;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/scheduler/c$b;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lcom/bumptech/glide/manager/DefaultConnectivityMonitor$1;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/gms/measurement/internal/w3;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/upstream/r$c;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;->onReceive()" [color="#a991d4" fontcolor=white]
+			"Lcom/example/r_upgrade/common/UpgradeService$a;->onReceive()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_service {
+			label=Service
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/android/exoplayer2/offline/DownloadService;->onStartCommand()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lio/flutter" -> "Landroid/net/ConnectivityManager;->getActiveNetworkInfo()" [constraint=true]
+	"Lio/flutter" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/j5;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google" -> "Landroid/net/ConnectivityManager;->getActiveNetworkInfo()" [constraint=true]
+	"Lcom/google/android/exoplayer2/offline/DownloadService;->onStartCommand()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/upstream/r;-><init>()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/scheduler/a;->run()" -> "Lcom/google" [constraint=true]
+	"Lzendesk/core/NetworkUtils;->isConnected()" -> Lzendesk [constraint=true]
+	Lzendesk -> "Landroid/net/ConnectivityManager;->getActiveNetworkInfo()" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/h9;->a()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/a5;->run()" -> "Lcom/google" [constraint=true]
+	"Lzendesk/core/ZendeskNetworkInfoProvider$1$1;->run()" -> Lzendesk [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/g5;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/n9;->a()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/scheduler/b;->run()" -> "Lcom/google" [constraint=true]
+	"Lzendesk/core/ZendeskNetworkInfoProvider$NetworkAvailabilityBroadcastReceiver;->onReceive()" -> Lzendesk [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/k5;->run()" -> "Lcom/google" [constraint=true]
+	"Lzendesk/core/NetworkUtils;->isMobile()" -> Lzendesk [constraint=true]
+	"Lzendesk/core/ZendeskNetworkInfoProvider$1$2;->run()" -> Lzendesk [constraint=true]
+	"Lio/flutter/plugins/connectivity/ConnectivityBroadcastReceiver;->onReceive()" -> "Lio/flutter" [constraint=true]
+	"Lcom/google/firebase/messaging/SyncTask;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/bumptech" -> "Landroid/net/ConnectivityManager;->getActiveNetworkInfo()" [constraint=true]
+	"Lcom/bumptech/glide/manager/DefaultConnectivityMonitor;->onStart()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/google/firebase/messaging/SyncTask$ConnectivityChangeReceiver;->onReceive()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/scheduler/c$b;->onReceive()" -> "Lcom/google" [constraint=true]
+	"Lcom/bumptech/glide/manager/DefaultConnectivityMonitor$1;->onReceive()" -> "Lcom/bumptech" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/o9;->a()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/i5;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/messaging/TopicsSyncTask;->run()" -> "Lcom/google" [constraint=true]
+	"Lzendesk/core/ZendeskNetworkInfoProvider;->isNetworkAvailable()" -> "Landroid/net/ConnectivityManager;->getActiveNetworkInfo()" [constraint=true]
+	"Lcom/google/android/exoplayer2/scheduler/PlatformScheduler$PlatformSchedulerService;->onStartJob()" -> "Lcom/google" [constraint=true]
+	"Lio/flutter/plugins/connectivity/ConnectivityMethodChannelHandler;->onMethodCall()" -> "Lio/flutter" [constraint=true]
+	"Lcom/google/android/datatransport/cct/d;->b()" -> "Landroid/net/ConnectivityManager;->getActiveNetworkInfo()" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/q9;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/e;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/m9;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/crashlytics/d;->create()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/o5;->run()" -> "Lcom/google" [constraint=true]
+	"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" -> "Lio/flutter" [constraint=true]
+	"Lio/flutter/plugins/connectivity/ConnectivityBroadcastReceiver$2;->run()" -> "Lio/flutter" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/z4;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/w3;->onReceive()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/upstream/r$c;->onReceive()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/messaging/TopicsSyncTask$ConnectivityChangeReceiver;->onReceive()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/upstream/b;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/t8;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/c6;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/gms/measurement/internal/v3;->run()" -> "Lcom/google" [constraint=true]
+	"Le/i" -> "Landroid/net/ConnectivityManager;->getNetworkInfo()" [constraint=true]
+	"Lcom/example/r_upgrade/common/UpgradeService$a;->onReceive()" -> "Le/i" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lzendesk/core/NetworkUtils;->isConnected()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/gms/measurement/internal/h9;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/gms/measurement/internal/n9;->a()" [color="#a991d4" fontcolor=white]
+		"Lzendesk/core/NetworkUtils;->isMobile()" [color="#a991d4" fontcolor=white]
+		"Lcom/bumptech/glide/manager/DefaultConnectivityMonitor;->onStart()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/gms/measurement/internal/o9;->a()" [color="#a991d4" fontcolor=white]
+		"Lzendesk/core/ZendeskNetworkInfoProvider;->isNetworkAvailable()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/upstream/r;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/scheduler/PlatformScheduler$PlatformSchedulerService;->onStartJob()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/connectivity/ConnectivityMethodChannelHandler;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/datatransport/cct/d;->b()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/firebase/crashlytics/d;->create()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" [color="#a991d4" fontcolor=white]
+	}
+}

@@ -1,0 +1,66 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getPhoneType()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getSimState()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getSimOperator()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getNetworkCountryIso()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lg/c/a/p;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/datatransport/cct/d;->b()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/facebook/i$e;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$d;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$a;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$c;->run()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/facebook/i$e;->run()" -> Lcom [constraint=true]
+	Lcom -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook" -> "Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [constraint=true]
+	"Lcom/facebook/z/e$d;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/z/e$a;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/z/e$c;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lg/c/a/p;->onMethodCall()" -> "Lg/c" [constraint=true]
+	"Lg/c" -> "Landroid/telephony/TelephonyManager;->getPhoneType()" [constraint=true]
+	"Lg/c" -> "Landroid/telephony/TelephonyManager;->getSimState()" [constraint=true]
+	"Lcom/google/android/datatransport/cct/d;->b()" -> "Landroid/telephony/TelephonyManager;->getSimOperator()" [constraint=true]
+	"Lcom/google" -> "Landroid/telephony/TelephonyManager;->getNetworkCountryIso()" [constraint=true]
+	"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" -> "Lio/flutter" [constraint=true]
+	"Lio/flutter" -> "Lcom/google" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lg/c/a/p;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/datatransport/cct/d;->b()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" [color="#a991d4" fontcolor=white]
+	}
+}

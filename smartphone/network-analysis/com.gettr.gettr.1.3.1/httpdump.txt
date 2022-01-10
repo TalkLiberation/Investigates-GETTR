@@ -1,0 +1,323 @@
+DNS-QUERY at 1641376525962
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  www.gettr.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1641376526007
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 9
+Authorities: 0
+Additionals: 0
+
+Questions:
+  www.gettr.com	0	IN	AAAA	
+Answers:
+  www.gettr.com			300	IN	CNAME	CNAME dysipqkvk08e2.cloudfront.net
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:6600:1a:d6d6:9e80:93a1
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:4e00:1a:d6d6:9e80:93a1
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:1200:1a:d6d6:9e80:93a1
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:e400:1a:d6d6:9e80:93a1
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:5c00:1a:d6d6:9e80:93a1
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:9200:1a:d6d6:9e80:93a1
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:4000:1a:d6d6:9e80:93a1
+  dysipqkvk08e2.cloudfront.net	60	IN	AAAA	2600:9000:2127:3c00:1a:d6d6:9e80:93a1
+
+DNS-QUERY at 1641376526014
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  www.gettr.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1641376526084
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 5
+Authorities: 0
+Additionals: 0
+
+Questions:
+  www.gettr.com	0	IN	A	
+Answers:
+  www.gettr.com			300	IN	CNAME	CNAME dysipqkvk08e2.cloudfront.net
+  dysipqkvk08e2.cloudfront.net	60	IN	A	65.9.98.48
+  dysipqkvk08e2.cloudfront.net	60	IN	A	65.9.98.129
+  dysipqkvk08e2.cloudfront.net	60	IN	A	65.9.98.32
+  dysipqkvk08e2.cloudfront.net	60	IN	A	65.9.98.93
+
+HTTPS-REQUEST 10.0.2.15:42519 -> www.gettr.com:443 at 1641549337371
+================================================================================
+GET /.well-known/assetlinks.json HTTP/1.1
+Host: www.gettr.com
+Accept-Encoding: gzip
+Cache-Control: max-stale=60
+Connection: Keep-Alive
+Host: www.gettr.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus 4 Build/MMB29U)
+
+HTTPS-RESPONSE www.gettr.com:443 -> 10.0.2.15:42519 at 1641549337391
+================================================================================
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Age: 24566
+Connection: keep-alive
+Content-Length: 784
+Content-Type: application/json
+Date: Fri, 07 Jan 2022 08:02:28 GMT
+Etag: "8393cdf52f0e2062fcd136d09bb84c71"
+Last-Modified: Wed, 01 Dec 2021 05:06:20 GMT
+Server: AmazonS3
+Via: 1.1 bb390afd921c223e0fe4921fbc23bbe8.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: 2O15lrftDkoNmJwYfzAMOADwAH1Oi35IoeqrxNZkcfdtoHqEkJZgoQ==
+X-Amz-Cf-Pop: PRG50-C1
+X-Cache: Hit from cloudfront
+
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.gettr.gettr",
+            "sha256_cert_fingerprints": [
+                "E0:AE:FC:91:5B:0B:FF:33:EC:16:C6:BC:C6:58:BE:E1:98:BA:9E:5F:BB:44:1B:B6:FE:3C:D2:78:C3:46:88:0A"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "org.gsuite.getter",
+            "sha256_cert_fingerprints": [
+                "E0:AE:FC:91:5B:0B:FF:33:EC:16:C6:BC:C6:58:BE:E1:98:BA:9E:5F:BB:44:1B:B6:FE:3C:D2:78:C3:46:88:0A"
+            ]
+        }
+    }
+]
+
+DNS-QUERY at 1641549340202
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  gettr.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1641549340235
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 8
+Authorities: 0
+Additionals: 0
+
+Questions:
+  gettr.com	0	IN	AAAA	
+Answers:
+  gettr.com	60	IN	AAAA	2600:9000:20eb:a600:1a:d6d6:9e80:93a1
+  gettr.com	60	IN	AAAA	2600:9000:20eb:4e00:1a:d6d6:9e80:93a1
+  gettr.com	60	IN	AAAA	2600:9000:20eb:b400:1a:d6d6:9e80:93a1
+  gettr.com	60	IN	AAAA	2600:9000:20eb:6a00:1a:d6d6:9e80:93a1
+  gettr.com	60	IN	AAAA	2600:9000:20eb:ae00:1a:d6d6:9e80:93a1
+  gettr.com	60	IN	AAAA	2600:9000:20eb:4c00:1a:d6d6:9e80:93a1
+  gettr.com	60	IN	AAAA	2600:9000:20eb:e400:1a:d6d6:9e80:93a1
+  gettr.com	60	IN	AAAA	2600:9000:20eb:9e00:1a:d6d6:9e80:93a1
+
+DNS-QUERY at 1641549340242
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  gettr.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1641549340258
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 4
+Authorities: 0
+Additionals: 0
+
+Questions:
+  gettr.com	0	IN	A	
+Answers:
+  gettr.com	36	IN	A	18.66.97.125
+  gettr.com	36	IN	A	18.66.97.11
+  gettr.com	36	IN	A	18.66.97.52
+  gettr.com	36	IN	A	18.66.97.41
+
+HTTPS-REQUEST 10.0.2.15:44724 -> gettr.com:443 at 1641549342338
+================================================================================
+GET /.well-known/assetlinks.json HTTP/1.1
+Host: gettr.com
+Accept-Encoding: gzip
+Cache-Control: max-stale=60
+Connection: Keep-Alive
+Host: gettr.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus 4 Build/MMB29U)
+
+HTTPS-RESPONSE gettr.com:443 -> 10.0.2.15:44724 at 1641549342375
+================================================================================
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Age: 24571
+Connection: keep-alive
+Content-Length: 784
+Content-Type: application/json
+Date: Fri, 07 Jan 2022 03:06:13 GMT
+Etag: "8393cdf52f0e2062fcd136d09bb84c71"
+Last-Modified: Wed, 01 Dec 2021 05:06:20 GMT
+Server: AmazonS3
+Via: 1.1 7ed0982309781d390a105a3ead66dbfa.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: KazKAFECtQgvtaX3Z5sXrLjltQ_PR0PdgUIwvXJex8NqMabkZ0raPQ==
+X-Amz-Cf-Pop: FRA56-P2
+X-Cache: Hit from cloudfront
+
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.gettr.gettr",
+            "sha256_cert_fingerprints": [
+                "E0:AE:FC:91:5B:0B:FF:33:EC:16:C6:BC:C6:58:BE:E1:98:BA:9E:5F:BB:44:1B:B6:FE:3C:D2:78:C3:46:88:0A"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "org.gsuite.getter",
+            "sha256_cert_fingerprints": [
+                "E0:AE:FC:91:5B:0B:FF:33:EC:16:C6:BC:C6:58:BE:E1:98:BA:9E:5F:BB:44:1B:B6:FE:3C:D2:78:C3:46:88:0A"
+            ]
+        }
+    }
+]
+
+DNS-QUERY at 1641549507575
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1641549507586
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	139	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1641549507589
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1641549507599
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	73	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.15:44562 -> firebase-settings.crashlytics.com:443 at 1641635942363
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=f9a4c9b5cbf50f1a09f786d6f8347180526f8800&build_version=31123114&display_version=1.3.1&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.2.4
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.2.4
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: LGE/Nexus 4
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 9c8c2798a10c48ac801f4542c656cdf4
+X-Crashlytics-Os-Build-Version: eng.tassadar.20210113.162931
+X-Crashlytics-Os-Display-Version: 6.0.1
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.15:44562 at 1641635942509
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 09:59:04 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+

@@ -1,0 +1,35 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljava/net/DatagramSocket;->receive()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/android/exoplayer2/upstream/h0;->b()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/x1/a0$d;->a()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/google" -> "Ljava/net/DatagramSocket;->receive()" [constraint=true]
+	"Lcom/google/android/exoplayer2/upstream/h0;->b()" -> "Ljava/net/DatagramSocket;->receive()" [constraint=true]
+	"Lcom/google/android/exoplayer2/x1/a0$d;->a()" -> "Lcom/google" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/google/android/exoplayer2/upstream/h0;->b()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/x1/a0$d;->a()" [color="#a991d4" fontcolor=white]
+	}
+}

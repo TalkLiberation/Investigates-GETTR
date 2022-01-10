@@ -1,0 +1,60 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/system/Os;->readlink()" [color="#593196" fontcolor=white]
+	"Landroid/system/Os;->stat()" [color="#593196" fontcolor=white]
+	"Landroid/system/OsConstants;->S_ISREG()" [color="#593196" fontcolor=white]
+	"Landroid/system/Os;->posix_fallocate()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/facebook/imagepipeline/nativecode/NativeCodeInitializer;->init()" [color="#a991d4" fontcolor=white]
+			"Ld/i/h/h;->c()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/soloader/f$c$a;->d()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/soloader/f$c$a;->c()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/soloader/b;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/soloader/j;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/soloader/e;->l()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/soloader/f$c;->c()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/facebook" -> "Landroid/system/Os;->readlink()" [constraint=true]
+	"Lcom/facebook" -> "Landroid/system/Os;->posix_fallocate()" [constraint=true]
+	"Lcom/facebook/imagepipeline/nativecode/NativeCodeInitializer;->init()" -> "Lcom/facebook" [constraint=true]
+	"Ld/i/h/h;->c()" -> "Ld/i" [constraint=true]
+	"Ld/i" -> "Landroid/system/Os;->readlink()" [constraint=true]
+	"Ld/i" -> "Landroid/system/Os;->stat()" [constraint=true]
+	"Ld/i" -> "Landroid/system/OsConstants;->S_ISREG()" [constraint=true]
+	"Lcom/facebook/soloader/f$c$a;->d()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/soloader/f$c$a;->c()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/soloader/b;->a()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/soloader/j;->a()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/soloader/e;->l()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/facebook/soloader/f$c;->c()" -> "Lcom/facebook" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/facebook/imagepipeline/nativecode/NativeCodeInitializer;->init()" [color="#a991d4" fontcolor=white]
+		"Ld/i/h/h;->c()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/soloader/f$c$a;->d()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/soloader/f$c$a;->c()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/soloader/b;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/soloader/j;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/soloader/e;->l()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/soloader/f$c;->c()" [color="#a991d4" fontcolor=white]
+	}
+}

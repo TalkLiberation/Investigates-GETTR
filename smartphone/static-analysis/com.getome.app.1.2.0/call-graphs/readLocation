@@ -1,0 +1,36 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/location/Location;->getLatitude()" [color="#593196" fontcolor=white]
+	"Landroid/location/Location;->getLongitude()" [color="#593196" fontcolor=white]
+	"Landroid/location/LocationManager;->getLastKnownLocation()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Landroidx/appcompat/app/e$n;->c()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Landroidx/appcompat/app/e$n;->c()" -> "Landroidx/appcompat" [constraint=true]
+	"Landroidx/appcompat" -> "Landroid/location/Location;->getLatitude()" [constraint=true]
+	"Landroidx/appcompat" -> "Landroid/location/Location;->getLongitude()" [constraint=true]
+	"Landroidx/appcompat" -> "Landroid/location/LocationManager;->getLastKnownLocation()" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Landroidx/appcompat/app/e$n;->c()" [color="#a991d4" fontcolor=white]
+	}
+}

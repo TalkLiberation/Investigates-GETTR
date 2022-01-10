@@ -1,0 +1,40 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljava/net/ServerSocket;->accept()" [color="#593196" fontcolor=white]
+	"Ljava/net/ServerSocket;->bind()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lokhttp3/mockwebserver/MockWebServer$3;->execute()" [color="#a991d4" fontcolor=white]
+			"Lokhttp3/mockwebserver/MockWebServer;->toProxyAddress()" [color="#a991d4" fontcolor=white]
+			"Lokhttp3/mockwebserver/MockWebServer$Http2SocketHandler;->onStream()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	Lokhttp3 -> "Ljava/net/ServerSocket;->accept()" [constraint=true]
+	Lokhttp3 -> "Ljava/net/ServerSocket;->bind()" [constraint=true]
+	"Lokhttp3/mockwebserver/MockWebServer$3;->execute()" -> Lokhttp3 [constraint=true]
+	"Lokhttp3/mockwebserver/MockWebServer;->toProxyAddress()" -> Lokhttp3 [constraint=true]
+	"Lokhttp3/mockwebserver/MockWebServer$Http2SocketHandler;->onStream()" -> Lokhttp3 [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lokhttp3/mockwebserver/MockWebServer$3;->execute()" [color="#a991d4" fontcolor=white]
+		"Lokhttp3/mockwebserver/MockWebServer;->toProxyAddress()" [color="#a991d4" fontcolor=white]
+		"Lokhttp3/mockwebserver/MockWebServer$Http2SocketHandler;->onStream()" [color="#a991d4" fontcolor=white]
+	}
+}

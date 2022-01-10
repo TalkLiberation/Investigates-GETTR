@@ -1,0 +1,57 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_receiver {
+			label=Receiver
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/dexterous/flutterlocalnotifications/ScheduledNotificationReceiver;->onReceive()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_service {
+			label=Service
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/messaging/FirebaseMessagingService;->handleIntent()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin;->onMethodCall()" -> "Lcom/dexterous" [constraint=true]
+	"Lcom/dexterous" -> "Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [constraint=true]
+	"Lcom/google" -> "Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [constraint=true]
+	"Lcom/google/firebase/messaging/FirebaseMessagingService;->handleIntent()" -> "Lcom/google" [constraint=true]
+	"Lcom/dexterous/flutterlocalnotifications/ScheduledNotificationReceiver;->onReceive()" -> "Lcom/dexterous" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin;->onMethodCall()" [color="#a991d4" fontcolor=white]
+	}
+}

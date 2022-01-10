@@ -1,0 +1,68 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/media/AudioRecord;->startRecording()" [color="#593196" fontcolor=white]
+	"Landroid/media/AudioRecord;->read()" [color="#593196" fontcolor=white]
+	"Landroid/media/AudioRecord;->read()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/banuba/sdk/veui/ui/d0/a;->f()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/core/encoding/d$d$a;->onPeriodicNotification()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/veui/ui/d0/a$c;->invoke()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lh/b0/a/i;->run()" [color="#a991d4" fontcolor=white]
+			"Lh/b0/a/j;->f()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_handler {
+			label=Handler
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/banuba/sdk/core/encoding/d;->handleMessage()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lh/b0/a/i;->run()" -> "Lh/b0" [constraint=true]
+	"Lh/b0" -> "Landroid/media/AudioRecord;->startRecording()" [constraint=true]
+	"Lcom/banuba/sdk/core/encoding/d;->handleMessage()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba" -> "Landroid/media/AudioRecord;->startRecording()" [constraint=true]
+	"Lcom/banuba" -> "Landroid/media/AudioRecord;->read()" [constraint=true]
+	"Lcom/banuba/sdk/veui/ui/d0/a;->f()" -> "Landroid/media/AudioRecord;->startRecording()" [constraint=true]
+	"Lcom/banuba/sdk/core/encoding/d$d$a;->onPeriodicNotification()" -> "Landroid/media/AudioRecord;->read()" [constraint=true]
+	"Lcom/banuba/sdk/veui/ui/d0/a$c;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lh/b0/a/j;->f()" -> "Landroid/media/AudioRecord;->read()" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/banuba/sdk/veui/ui/d0/a;->f()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/core/encoding/d$d$a;->onPeriodicNotification()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/veui/ui/d0/a$c;->invoke()" [color="#a991d4" fontcolor=white]
+	}
+}

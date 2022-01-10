@@ -1,0 +1,43 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/hardware/SensorManager;->getDefaultSensor()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$11;->run()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_callable {
+			label=Callable
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$6;->call()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/google" -> "Landroid/hardware/SensorManager;->getDefaultSensor()" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$11;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$6;->call()" -> "Lcom/google" [constraint=true]
+	subgraph cluster_other_entrypoints {
+	}
+}

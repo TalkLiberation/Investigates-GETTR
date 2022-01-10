@@ -1,0 +1,178 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getPhoneType()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getSimState()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getSimOperatorName()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getSimOperator()" [color="#593196" fontcolor=white]
+	"Landroid/telephony/TelephonyManager;->getNetworkCountryIso()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/appsflyer/internal/ai;->updateServerUninstallToken()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/ModuleSessions$Sessions;->beginSession()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->setConsent()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->updateRemoteConfigForKeysOnly()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->changeDeviceId()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/ModuleDeviceId;->initFinished()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->init()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->changeDeviceId()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/ModuleConsent$Consent;->setConsentFeatureGroup()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->remoteConfigUpdate()" [color="#a991d4" fontcolor=white]
+			"Lcom/appsflyer/FirebaseMessagingServiceListener;->onNewToken()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/ModuleConsent$Consent;->setConsent()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/ModuleRemoteConfig;->initFinished()" [color="#a991d4" fontcolor=white]
+			"Lly/count/dart/countly_flutter/CountlyFlutterPlugin;->onStart()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->updateRemoteConfigExceptKeys()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/ModuleRemoteConfig;->deviceIdChanged()" [color="#a991d4" fontcolor=white]
+			"Lly/count/dart/countly_flutter/CountlyFlutterPlugin;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->init()" [color="#a991d4" fontcolor=white]
+			"Lh/d/a/p;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/datatransport/cct/d;->a()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" [color="#a991d4" fontcolor=white]
+			"Lh/t/a/a;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/ve/player/i0;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/i/h/b;->c()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/ve/data/d$f;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/ve/player/i0;->b()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/o/a$a$u;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/ve/player/i0;->p()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/android/sdk/ve/timeline/music/data/a;->prepare()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/appsflyer/internal/ai$b;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/appsflyer/internal/ai$d;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$c;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/appsflyer/internal/ai$2$3;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$a;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/appsflyer/internal/z$3;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/appsflyer/internal/ai$3;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/i$e;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/appsflyer/internal/ai$e;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/e$d;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/ve/player/j;->G()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/ve/player/h0;->h0()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_handler {
+			label=Handler
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/banuba/sdk/ve/player/g0;->handleMessage()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lly/count" -> "Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [constraint=true]
+	"Lcom/appsflyer/internal/ai;->updateServerUninstallToken()" -> "Lcom/appsflyer" [constraint=true]
+	"Lcom/appsflyer" -> "Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [constraint=true]
+	"Lcom/appsflyer" -> "Landroid/telephony/TelephonyManager;->getPhoneType()" [constraint=true]
+	"Lcom/appsflyer" -> "Landroid/telephony/TelephonyManager;->getSimOperatorName()" [constraint=true]
+	"Lly/count/android/sdk/ModuleSessions$Sessions;->beginSession()" -> "Lly/count" [constraint=true]
+	"Lcom/appsflyer/internal/ai$b;->run()" -> "Lcom/appsflyer" [constraint=true]
+	"Lcom/appsflyer/internal/ai$d;->run()" -> "Lcom/appsflyer" [constraint=true]
+	"Lcom/facebook" -> "Landroid/telephony/TelephonyManager;->getNetworkOperatorName()" [constraint=true]
+	"Lly/count/android/sdk/Countly;->setConsent()" -> "Lly/count" [constraint=true]
+	"Lly/count/android/sdk/Countly;->updateRemoteConfigForKeysOnly()" -> "Lly/count" [constraint=true]
+	"Lcom/facebook/z/e$c;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lly/count/android/sdk/Countly;->init()" -> "Lly/count" [constraint=true]
+	"Lcom/appsflyer/internal/ai$2$3;->run()" -> "Lcom/appsflyer" [constraint=true]
+	"Lly/count/android/sdk/Countly;->changeDeviceId()" -> "Lly/count" [constraint=true]
+	"Lly/count/android/sdk/ModuleDeviceId;->initFinished()" -> "Lly/count" [constraint=true]
+	"Lcom/facebook/z/e$a;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/appsflyer/internal/z$3;->run()" -> "Lcom/appsflyer" [constraint=true]
+	Lcom -> "Lcom/facebook" [constraint=true]
+	"Lly/count/android/sdk/ModuleConsent$Consent;->setConsentFeatureGroup()" -> "Lly/count" [constraint=true]
+	"Lcom/appsflyer/internal/ai$3;->run()" -> "Lcom/appsflyer" [constraint=true]
+	"Lly/count/android/sdk/Countly;->remoteConfigUpdate()" -> "Lly/count" [constraint=true]
+	"Lcom/appsflyer/FirebaseMessagingServiceListener;->onNewToken()" -> "Lcom/appsflyer" [constraint=true]
+	"Lcom/facebook/i$e;->run()" -> Lcom [constraint=true]
+	"Lly/count/android/sdk/ModuleConsent$Consent;->setConsent()" -> "Lly/count" [constraint=true]
+	"Lly/count/android/sdk/ModuleRemoteConfig;->initFinished()" -> "Lly/count" [constraint=true]
+	"Lly/count/dart/countly_flutter/CountlyFlutterPlugin;->onStart()" -> "Lly/count" [constraint=true]
+	"Lcom/appsflyer/internal/ai$e;->run()" -> "Lcom/appsflyer" [constraint=true]
+	"Lly/count/android/sdk/Countly;->updateRemoteConfigExceptKeys()" -> "Lly/count" [constraint=true]
+	"Lly/count/android/sdk/ModuleRemoteConfig;->deviceIdChanged()" -> "Lly/count" [constraint=true]
+	"Lly/count/dart/countly_flutter/CountlyFlutterPlugin;->onMethodCall()" -> "Lly/count" [constraint=true]
+	"Lcom/facebook/z/e$d;->run()" -> "Lcom/facebook" [constraint=true]
+	"Lh/d" -> "Landroid/telephony/TelephonyManager;->getPhoneType()" [constraint=true]
+	"Lh/d" -> "Landroid/telephony/TelephonyManager;->getSimState()" [constraint=true]
+	"Lh/d/a/p;->onMethodCall()" -> "Lh/d" [constraint=true]
+	"Lcom/google/android/datatransport/cct/d;->a()" -> "Landroid/telephony/TelephonyManager;->getSimOperator()" [constraint=true]
+	"Lcom/google" -> "Landroid/telephony/TelephonyManager;->getNetworkCountryIso()" [constraint=true]
+	"Lcom/banuba" -> "Lcom/google" [constraint=true]
+	"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" -> "Lio/flutter" [constraint=true]
+	"Lio/flutter" -> "Lcom/google" [constraint=true]
+	"Lcom/banuba/sdk/ve/player/j;->G()" -> "Lcom/banuba" [constraint=true]
+	"Lh/t/a/a;->onMethodCall()" -> "Lh/t" [constraint=true]
+	"Lh/t" -> "Landroid/telephony/TelephonyManager;->getNetworkCountryIso()" [constraint=true]
+	"Lcom/banuba/sdk/ve/player/i0;->a()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/sdk/i/h/b;->c()" -> "Lcom/google" [constraint=true]
+	"Lcom/bitmovin" -> "Landroid/telephony/TelephonyManager;->getNetworkCountryIso()" [constraint=true]
+	"Lcom/banuba/sdk/ve/data/d$f;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/sdk/ve/player/i0;->b()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/sdk/ve/player/g0;->handleMessage()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/bitmovin/player/o/a$a$u;->invoke()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/banuba/sdk/ve/player/i0;->p()" -> "Lcom/google" [constraint=true]
+	"Lcom/banuba/android/sdk/ve/timeline/music/data/a;->prepare()" -> "Lcom/google" [constraint=true]
+	"Lcom/banuba/sdk/ve/player/h0;->h0()" -> "Lcom/banuba" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/appsflyer/internal/ai;->updateServerUninstallToken()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/ModuleSessions$Sessions;->beginSession()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->setConsent()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->updateRemoteConfigForKeysOnly()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->changeDeviceId()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/ModuleDeviceId;->initFinished()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->init()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->changeDeviceId()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/ModuleConsent$Consent;->setConsentFeatureGroup()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->remoteConfigUpdate()" [color="#a991d4" fontcolor=white]
+		"Lcom/appsflyer/FirebaseMessagingServiceListener;->onNewToken()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/ModuleConsent$Consent;->setConsent()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/ModuleRemoteConfig;->initFinished()" [color="#a991d4" fontcolor=white]
+		"Lly/count/dart/countly_flutter/CountlyFlutterPlugin;->onStart()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->updateRemoteConfigExceptKeys()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/ModuleRemoteConfig;->deviceIdChanged()" [color="#a991d4" fontcolor=white]
+		"Lly/count/dart/countly_flutter/CountlyFlutterPlugin;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->init()" [color="#a991d4" fontcolor=white]
+		"Lh/d/a/p;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/datatransport/cct/d;->a()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/videoplayer/VideoPlayerPlugin;->create()" [color="#a991d4" fontcolor=white]
+		"Lh/t/a/a;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/ve/player/i0;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/i/h/b;->c()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/ve/data/d$f;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/ve/player/i0;->b()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/player/o/a$a$u;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/ve/player/i0;->p()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/android/sdk/ve/timeline/music/data/a;->prepare()" [color="#a991d4" fontcolor=white]
+	}
+}

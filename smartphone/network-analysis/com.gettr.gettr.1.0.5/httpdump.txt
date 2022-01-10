@@ -1,0 +1,2444 @@
+DNS-QUERY at 1641658565392
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1641658565423
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	33	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1641658565424
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1641658565439
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	25	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55338 -> firebase-settings.crashlytics.com:443 at 1641658566241
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 0d4e038f497b444392109c29d431199e
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55338 at 1641658566382
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:16:08 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1641658567611
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1641658567630
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+Answers:
+  app-measurement.com	19	IN	AAAA	2a00:1450:4014:80b::200e
+
+DNS-QUERY at 1641658567630
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1641658567641
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+Answers:
+  app-measurement.com	18	IN	A	142.251.36.110
+
+HTTPS-REQUEST 10.0.2.16:52614 -> app-measurement.com:443 at 1641658567756
+================================================================================
+GET /config/app/1%3A337986424019%3Aandroid%3Accec426438a760e3f8d826?app_instance_id=dca4dc8a5857ec1548b5fa13707c6bd1&platform=android&gmp_version=42004 HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: app-measurement.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52614 at 1641658567805
+================================================================================
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: public, max-age=3000
+Content-Length: 702
+Content-Security-Policy: require-trusted-types-for 'script'; report-uri https://csp.withgoogle.com/csp/analytics-collection-dev
+Content-Type: application/x-protobuf
+Cross-Origin-Opener-Policy: same-origin; report-to="analytics-collection-dev"
+Cross-Origin-Resource-Policy: cross-origin
+Date: Fri, 07 Jan 2022 16:16:09 GMT
+Expires: Fri, 07 Jan 2022 17:06:09 GMT
+Last-Modified: Tue, 05 Oct 2021 22:13:32 GMT
+Report-To: {"group":"analytics-collection-dev","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/analytics-collection-dev"}]}
+Server: sffe
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 0
+
+00000000  08 c0 b4 c1 97 d4 f3 f2  02 12 2d 31 3a 33 33 37  |..........-1:337|
+00000010  39 38 36 34 32 34 30 31  39 3a 61 6e 64 72 6f 69  |986424019:androi|
+00000020  64 3a 63 63 65 63 34 32  36 34 33 38 61 37 36 30  |d:ccec426438a760|
+00000030  65 33 66 38 64 38 32 36  18 02 22 25 0a 1e 6d 65  |e3f8d826.."%..me|
+00000040  61 73 75 72 65 6d 65 6e  74 2e 61 75 64 69 65 6e  |asurement.audien|
+00000050  63 65 2e 6d 61 78 5f 63  6f 75 6e 74 12 03 31 30  |ce.max_count..10|
+00000060  30 22 33 0a 2d 6d 65 61  73 75 72 65 6d 65 6e 74  |0"3.-measurement|
+00000070  2e 75 70 6c 6f 61 64 2e  6d 61 78 5f 70 75 62 6c  |.upload.max_publ|
+00000080  69 63 5f 75 73 65 72 5f  70 72 6f 70 65 72 74 69  |ic_user_properti|
+00000090  65 73 12 02 32 35 22 34  0a 2d 6d 65 61 73 75 72  |es..25"4.-measur|
+000000a0  65 6d 65 6e 74 2e 75 70  6c 6f 61 64 2e 6d 61 78  |ement.upload.max|
+000000b0  5f 65 76 65 6e 74 5f 6e  61 6d 65 5f 63 61 72 64  |_event_name_card|
+000000c0  69 6e 61 6c 69 74 79 12  03 35 30 30 22 30 0a 2a  |inality..500"0.*|
+000000d0  6d 65 61 73 75 72 65 6d  65 6e 74 2e 75 70 6c 6f  |measurement.uplo|
+000000e0  61 64 2e 6d 61 78 5f 70  75 62 6c 69 63 5f 65 76  |ad.max_public_ev|
+000000f0  65 6e 74 5f 70 61 72 61  6d 73 12 02 32 35 22 34  |ent_params..25"4|
+00000100  0a 2c 6d 65 61 73 75 72  65 6d 65 6e 74 2e 61 63  |.,measurement.ac|
+00000110  63 6f 75 6e 74 2e 74 69  6d 65 5f 7a 6f 6e 65 5f  |count.time_zone_|
+00000120  6f 66 66 73 65 74 5f 6d  69 6e 75 74 65 73 12 04  |offset_minutes..|
+00000130  2d 32 34 30 22 1c 0a 17  67 61 69 61 5f 63 6f 6c  |-240"...gaia_col|
+00000140  6c 65 63 74 69 6f 6e 5f  65 6e 61 62 6c 65 64 12  |lection_enabled.|
+00000150  01 31 2a 0f 0a 0b 61 64  64 5f 74 6f 5f 63 61 72  |.1*...add_to_car|
+00000160  74 18 01 2a 13 0a 0f 61  64 64 5f 74 6f 5f 77 69  |t..*...add_to_wi|
+00000170  73 68 6c 69 73 74 18 01  2a 22 0a 1e 61 70 70 5f  |shlist..*"..app_|
+00000180  73 74 6f 72 65 5f 73 75  62 73 63 72 69 70 74 69  |store_subscripti|
+00000190  6f 6e 5f 63 6f 6e 76 65  72 74 18 01 2a 20 0a 1c  |on_convert..* ..|
+000001a0  61 70 70 5f 73 74 6f 72  65 5f 73 75 62 73 63 72  |app_store_subscr|
+000001b0  69 70 74 69 6f 6e 5f 72  65 6e 65 77 18 01 2a 12  |iption_renew..*.|
+000001c0  0a 0e 62 65 67 69 6e 5f  63 68 65 63 6b 6f 75 74  |..begin_checkout|
+000001d0  18 01 2a 1c 0a 18 63 72  65 61 74 65 61 63 63 6f  |..*...createacco|
+000001e0  75 6e 74 5f 73 75 63 63  65 73 73 66 75 6c 18 01  |unt_successful..|
+000001f0  2a 0f 0a 0b 66 6f 6c 6c  6f 77 5f 75 73 65 72 18  |*...follow_user.|
+00000200  01 2a 22 0a 1e 70 6f 73  74 5f 63 6f 6d 6d 65 6e  |.*"..post_commen|
+00000210  74 73 5f 72 65 70 6c 79  5f 73 75 63 63 65 73 73  |ts_reply_success|
+00000220  66 75 6c 18 01 2a 0d 0a  09 70 6f 73 74 5f 6c 69  |ful..*...post_li|
+00000230  6b 65 18 01 2a 0f 0a 0b  70 6f 73 74 5f 72 65 70  |ke..*...post_rep|
+00000240  6f 73 74 18 01 2a 18 0a  14 70 6f 73 74 5f 73 65  |ost..*...post_se|
+00000250  6e 64 5f 73 75 63 63 65  73 73 66 75 6c 18 01 2a  |nd_successful..*|
+00000260  0c 0a 08 70 75 72 63 68  61 73 65 18 01 2a 11 0a  |...purchase..*..|
+00000270  0d 73 65 73 73 69 6f 6e  5f 73 74 61 72 74 18 01  |.session_start..|
+00000280  2a 0d 0a 09 76 69 65 77  5f 69 74 65 6d 18 01 2a  |*...view_item..*|
+00000290  12 0a 0e 76 69 65 77 5f  69 74 65 6d 5f 6c 69 73  |...view_item_lis|
+000002a0  74 18 01 2a 17 0a 13 76  69 65 77 5f 73 65 61 72  |t..*...view_sear|
+000002b0  63 68 5f 72 65 73 75 6c  74 73 18 01 40 01        |ch_results..@.|
+
+HTTPS-REQUEST 10.0.2.16:52614 -> app-measurement.com:443 at 1641658568258
+================================================================================
+POST /a HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Encoding: gzip
+Content-Length: 544
+Content-Type: application/x-www-form-urlencoded
+Host: app-measurement.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+
+¬[
+
+_c
+
+
+_oauto
+
+_r
+
+_et
+
+_pfo\0
+
+_sys\0
+
+_uwa\0
+	
+_sysu\0_f÷∆Õ™„/ \0 
+
+
+_oauto
+
+_et
+
+_fr_e÷∆Õ™„/ \0÷∆Õ™„/_fot ÄµÓ´„/÷∆Õ™„/_fi æöÁ”„/_lte  ⁄ôÁ”„/(÷∆Õ™„/0÷∆Õ™„/BandroidJ11RPixel 5Zen-us`\0jmanual_installrcom.gettr.gettrÇ1.0.5àî»êî»™ dca4dc8a5857ec1548b5fa13707c6bd1∞ñŸá˘ß¥¯‹¿∏ -1:337986424019:android:ccec426438a760e3f8d826‡\0ÚdzKx_yj-SXyYO2kJGcxkdf¯Ñ∞Ëò¿¥¡ó‘ÛÚ3¢G1--
+ÉA
+
+
+_oauto
+
+_sid∆ÒÊé
+
+_sno
+
+_c
+
+_r_sïçÁ”„/ \0A
+
+
+_oauto
+
+_scMaskActivity
+
+_siÑ›Í‘¡üΩº∫_vsÄéÁ”„/ \0÷∆Õ™„/_fot ÄµÓ´„/÷∆Õ™„/_fi ïçÁ”„/_sno ïçÁ”„/_sid ∆ÒÊé∏õÁ”„/_lte πõÁ”„/_se \0 ⁄ôÁ”„/(ïçÁ”„/0ÄéÁ”„/8÷∆Õ™„/BandroidJ11RPixel 5Zen-us`\0jmanual_installrcom.gettr.gettrÇ1.0.5àî»êî»™ dca4dc8a5857ec1548b5fa13707c6bd1∞ñŸá˘ß¥¯‹¿∏ -1:337986424019:android:ccec426438a760e3f8d826–÷∆Õ™„/‡\0ÚdzKx_yj-SXyYO2kJGcxkdf¯Ñ∞Ëò¿¥¡ó‘ÛÚ3¢G1--=
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52614 at 1641658568307
+================================================================================
+HTTP/1.1 204 No Content
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Length: 0
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Date: Fri, 07 Jan 2022 16:16:10 GMT
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: Golfe2
+
+DNS-QUERY at 1642176984214
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642176984220
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	3	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1642176984220
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642176984236
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	3	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55346 -> firebase-settings.crashlytics.com:443 at 1642176985498
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55346 at 1642176985640
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:16:30 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55346 at 1642176985679
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:16:45 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1642176987135
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642176987151
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+Answers:
+  app-measurement.com	45	IN	AAAA	2a00:1450:4014:80b::200e
+
+DNS-QUERY at 1642176987151
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642176987167
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+Answers:
+  app-measurement.com	300	IN	A	142.251.36.110
+
+HTTPS-REQUEST 10.0.2.16:52638 -> app-measurement.com:443 at 1642176987297
+================================================================================
+GET /config/app/1%3A337986424019%3Aandroid%3Accec426438a760e3f8d826?app_instance_id=dca4dc8a5857ec1548b5fa13707c6bd1&platform=android&gmp_version=42004 HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: app-measurement.com
+If-Modified-Since: Tue, 05 Oct 2021 22:13:32 GMT
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52638 at 1642176987311
+================================================================================
+HTTP/1.1 304 Not Modified
+Age: 23
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: public, max-age=3000
+Date: Fri, 07 Jan 2022 16:16:09 GMT
+Expires: Fri, 07 Jan 2022 17:06:09 GMT
+Vary: accept-encoding
+
+HTTPS-REQUEST 10.0.2.16:52638 -> app-measurement.com:443 at 1642176987320
+================================================================================
+GET /config/app/1%3A337986424019%3Aandroid%3Accec426438a760e3f8d826?app_instance_id=dca4dc8a5857ec1548b5fa13707c6bd1&platform=android&gmp_version=42004 HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: app-measurement.com
+If-Modified-Since: Tue, 05 Oct 2021 22:13:32 GMT
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52638 at 1642176987345
+================================================================================
+HTTP/1.1 304 Not Modified
+Age: 23
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: public, max-age=3000
+Date: Fri, 07 Jan 2022 16:16:09 GMT
+Expires: Fri, 07 Jan 2022 17:06:09 GMT
+Vary: accept-encoding
+
+HTTPS-REQUEST 10.0.2.16:52638 -> app-measurement.com:443 at 1642176987712
+================================================================================
+POST /a HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Encoding: gzip
+Content-Length: 481
+Content-Type: application/x-www-form-urlencoded
+Host: app-measurement.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+
+ô
+
+
+_oauto_ab˘éÁ”„/ \0÷∆Õ™„/_fot ÄµÓ´„/÷∆Õ™„/_fi ïçÁ”„/_sno ïçÁ”„/_sid ∆ÒÊé¯ÅÅÀÂ/_lte ¯ÅÅÀÂ/_se \0 ºÅÅÀÂ/(˘éÁ”„/0˘éÁ”„/8ÄéÁ”„/BandroidJ11RPixel 5Zen-us`\0jmanual_installrcom.gettr.gettrÇ1.0.5àî»êî»™ dca4dc8a5857ec1548b5fa13707c6bd1∞ñŸá˘ß¥¯‹¿∏ -1:337986424019:android:ccec426438a760e3f8d826–ïçÁ”„/‡\0ÚeHdxer4BByyOfBcWX80B3e¯Ñ∞Ëò¿¥¡ó‘ÛÚ3¢G1--
+≈F
+
+
+_oauto
+
+_sid÷†Åè
+
+_sno
+
+_c
+
+_r_sÛ¶Á°Â/ ïçÁ”„/÷∆Õ™„/_fot ÄµÓ´„/÷∆Õ™„/_fi ÖÉÅÀÂ/_lte Û¶Á°Â/_sno Û¶Á°Â/_sid ÷†ÅèáÉÅÀÂ/_se \0 ºÅÅÀÂ/(Û¶Á°Â/0Û¶Á°Â/8˘éÁ”„/BandroidJ11RPixel 5Zen-us`\0jmanual_installrcom.gettr.gettrÇ1.0.5àî»êî»™ dca4dc8a5857ec1548b5fa13707c6bd1∞ñŸá˘ß¥¯‹¿∏ -1:337986424019:android:ccec426438a760e3f8d826–˘éÁ”„/‡\0ÚeHdxer4BByyOfBcWX80B3e¯Ñ∞Ëò¿¥¡ó‘ÛÚ3¢G1--=
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52638 at 1642176987747
+================================================================================
+HTTP/1.1 204 No Content
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Length: 0
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Date: Fri, 07 Jan 2022 16:16:33 GMT
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: Golfe2
+
+DNS-QUERY at 1642263399237
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642263399248
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	82	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1642263399249
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642263399260
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	82	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55394 -> firebase-settings.crashlytics.com:443 at 1642263399497
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55394 at 1642263399637
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:17:00 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1642263403236
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642263403244
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+Answers:
+  app-measurement.com	29	IN	AAAA	2a00:1450:4014:80b::200e
+
+DNS-QUERY at 1642263403245
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642263403260
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+Answers:
+  app-measurement.com	48	IN	A	142.251.36.110
+
+HTTPS-REQUEST 10.0.2.16:52704 -> app-measurement.com:443 at 1642263403558
+================================================================================
+GET /config/app/1%3A327451421140%3Aandroid%3A9c547b5ed466b580?app_instance_id=cc7185f6c05f65bbc835ea59ebb905bf&platform=android&gmp_version=214815&runtime_version=0 HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: app-measurement.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52704 at 1642263403593
+================================================================================
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Age: 21
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: public, max-age=3000
+Content-Length: 1174
+Content-Security-Policy: require-trusted-types-for 'script'; report-uri https://csp.withgoogle.com/csp/analytics-collection-dev
+Content-Type: application/x-protobuf
+Cross-Origin-Opener-Policy: same-origin; report-to="analytics-collection-dev"
+Cross-Origin-Resource-Policy: cross-origin
+Date: Fri, 07 Jan 2022 16:16:27 GMT
+Expires: Fri, 07 Jan 2022 17:06:27 GMT
+Last-Modified: Wed, 15 Dec 2021 20:58:56 GMT
+Report-To: {"group":"analytics-collection-dev","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/analytics-collection-dev"}]}
+Server: sffe
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 0
+
+00000000  08 c9 de db fc c9 e6 f4  02 12 27 31 3a 33 32 37  |..........'1:327|
+00000010  34 35 31 34 32 31 31 34  30 3a 61 6e 64 72 6f 69  |451421140:androi|
+00000020  64 3a 39 63 35 34 37 62  35 65 64 34 36 36 62 35  |d:9c547b5ed466b5|
+00000030  38 30 18 02 22 25 0a 1e  6d 65 61 73 75 72 65 6d  |80.."%..measurem|
+00000040  65 6e 74 2e 61 75 64 69  65 6e 63 65 2e 6d 61 78  |ent.audience.max|
+00000050  5f 63 6f 75 6e 74 12 03  31 30 30 22 33 0a 2d 6d  |_count..100"3.-m|
+00000060  65 61 73 75 72 65 6d 65  6e 74 2e 75 70 6c 6f 61  |easurement.uploa|
+00000070  64 2e 6d 61 78 5f 70 75  62 6c 69 63 5f 75 73 65  |d.max_public_use|
+00000080  72 5f 70 72 6f 70 65 72  74 69 65 73 12 02 32 35  |r_properties..25|
+00000090  22 34 0a 2d 6d 65 61 73  75 72 65 6d 65 6e 74 2e  |"4.-measurement.|
+000000a0  75 70 6c 6f 61 64 2e 6d  61 78 5f 65 76 65 6e 74  |upload.max_event|
+000000b0  5f 6e 61 6d 65 5f 63 61  72 64 69 6e 61 6c 69 74  |_name_cardinalit|
+000000c0  79 12 03 35 30 30 22 30  0a 2a 6d 65 61 73 75 72  |y..500"0.*measur|
+000000d0  65 6d 65 6e 74 2e 75 70  6c 6f 61 64 2e 6d 61 78  |ement.upload.max|
+000000e0  5f 70 75 62 6c 69 63 5f  65 76 65 6e 74 5f 70 61  |_public_event_pa|
+000000f0  72 61 6d 73 12 02 32 35  22 34 0a 2c 6d 65 61 73  |rams..25"4.,meas|
+00000100  75 72 65 6d 65 6e 74 2e  61 63 63 6f 75 6e 74 2e  |urement.account.|
+00000110  74 69 6d 65 5f 7a 6f 6e  65 5f 6f 66 66 73 65 74  |time_zone_offset|
+00000120  5f 6d 69 6e 75 74 65 73  12 04 2d 34 32 30 2a 0f  |_minutes..-420*.|
+00000130  0a 0b 61 64 64 5f 74 6f  5f 63 61 72 74 18 01 2a  |..add_to_cart..*|
+00000140  13 0a 0f 61 64 64 5f 74  6f 5f 77 69 73 68 6c 69  |...add_to_wishli|
+00000150  73 74 18 01 2a 22 0a 1e  61 70 70 5f 73 74 6f 72  |st..*"..app_stor|
+00000160  65 5f 73 75 62 73 63 72  69 70 74 69 6f 6e 5f 63  |e_subscription_c|
+00000170  6f 6e 76 65 72 74 18 01  2a 20 0a 1c 61 70 70 5f  |onvert..* ..app_|
+00000180  73 74 6f 72 65 5f 73 75  62 73 63 72 69 70 74 69  |store_subscripti|
+00000190  6f 6e 5f 72 65 6e 65 77  18 01 2a 12 0a 0e 62 65  |on_renew..*...be|
+000001a0  67 69 6e 5f 63 68 65 63  6b 6f 75 74 18 01 2a 1f  |gin_checkout..*.|
+000001b0  0a 1b 66 72 65 65 5f 61  63 71 75 69 73 69 74 69  |..free_acquisiti|
+000001c0  6f 6e 5f 61 70 70 73 5f  67 61 6d 65 73 18 01 2a  |on_apps_games..*|
+000001d0  1a 0a 16 66 72 65 65 5f  61 63 71 75 69 73 69 74  |...free_acquisit|
+000001e0  69 6f 6e 5f 62 6f 6f 6b  73 18 01 2a 1c 0a 18 66  |ion_books..*...f|
+000001f0  72 65 65 5f 61 63 71 75  69 73 69 74 69 6f 6e 5f  |ree_acquisition_|
+00000200  75 6e 6b 6e 6f 77 6e 18  01 2a 0c 0a 08 70 75 72  |unknown..*...pur|
+00000210  63 68 61 73 65 18 01 2a  25 0a 21 70 75 72 63 68  |chase..*%.!purch|
+00000220  61 73 65 5f 63 6f 6d 70  6c 65 74 69 6f 6e 5f 61  |ase_completion_a|
+00000230  70 70 73 5f 67 61 6d 65  73 5f 61 75 18 01 2a 26  |pps_games_au..*&|
+00000240  0a 22 70 75 72 63 68 61  73 65 5f 63 6f 6d 70 6c  |."purchase_compl|
+00000250  65 74 69 6f 6e 5f 61 70  70 73 5f 67 61 6d 65 73  |etion_apps_games|
+00000260  5f 6e 70 75 18 01 2a 26  0a 22 70 75 72 63 68 61  |_npu..*&."purcha|
+00000270  73 65 5f 63 6f 6d 70 6c  65 74 69 6f 6e 5f 61 70  |se_completion_ap|
+00000280  70 73 5f 67 61 6d 65 73  5f 72 70 75 18 01 2a 2a  |ps_games_rpu..**|
+00000290  0a 26 70 75 72 63 68 61  73 65 5f 63 6f 6d 70 6c  |.&purchase_compl|
+000002a0  65 74 69 6f 6e 5f 61 70  70 73 5f 67 61 6d 65 73  |etion_apps_games|
+000002b0  5f 75 6e 6b 6e 6f 77 6e  18 01 2a 20 0a 1c 70 75  |_unknown..* ..pu|
+000002c0  72 63 68 61 73 65 5f 63  6f 6d 70 6c 65 74 69 6f  |rchase_completio|
+000002d0  6e 5f 62 6f 6f 6b 73 5f  61 75 18 01 2a 21 0a 1d  |n_books_au..*!..|
+000002e0  70 75 72 63 68 61 73 65  5f 63 6f 6d 70 6c 65 74  |purchase_complet|
+000002f0  69 6f 6e 5f 62 6f 6f 6b  73 5f 6e 70 75 18 01 2a  |ion_books_npu..*|
+00000300  21 0a 1d 70 75 72 63 68  61 73 65 5f 63 6f 6d 70  |!..purchase_comp|
+00000310  6c 65 74 69 6f 6e 5f 62  6f 6f 6b 73 5f 72 70 75  |letion_books_rpu|
+00000320  18 01 2a 25 0a 21 70 75  72 63 68 61 73 65 5f 63  |..*%.!purchase_c|
+00000330  6f 6d 70 6c 65 74 69 6f  6e 5f 62 6f 6f 6b 73 5f  |ompletion_books_|
+00000340  75 6e 6b 6e 6f 77 6e 18  01 2a 1e 0a 1a 70 75 72  |unknown..*...pur|
+00000350  63 68 61 73 65 5f 63 6f  6d 70 6c 65 74 69 6f 6e  |chase_completion|
+00000360  5f 69 61 70 5f 61 75 18  01 2a 1f 0a 1b 70 75 72  |_iap_au..*...pur|
+00000370  63 68 61 73 65 5f 63 6f  6d 70 6c 65 74 69 6f 6e  |chase_completion|
+00000380  5f 69 61 70 5f 6e 70 75  18 01 2a 1f 0a 1b 70 75  |_iap_npu..*...pu|
+00000390  72 63 68 61 73 65 5f 63  6f 6d 70 6c 65 74 69 6f  |rchase_completio|
+000003a0  6e 5f 69 61 70 5f 72 70  75 18 01 2a 23 0a 1f 70  |n_iap_rpu..*#..p|
+000003b0  75 72 63 68 61 73 65 5f  63 6f 6d 70 6c 65 74 69  |urchase_completi|
+000003c0  6f 6e 5f 69 61 70 5f 75  6e 6b 6e 6f 77 6e 18 01  |on_iap_unknown..|
+000003d0  2a 21 0a 1d 70 75 72 63  68 61 73 65 5f 63 6f 6d  |*!..purchase_com|
+000003e0  70 6c 65 74 69 6f 6e 5f  6d 6f 76 69 65 73 5f 61  |pletion_movies_a|
+000003f0  75 18 01 2a 22 0a 1e 70  75 72 63 68 61 73 65 5f  |u..*"..purchase_|
+00000400  63 6f 6d 70 6c 65 74 69  6f 6e 5f 6d 6f 76 69 65  |completion_movie|
+00000410  73 5f 6e 70 75 18 01 2a  22 0a 1e 70 75 72 63 68  |s_npu..*"..purch|
+00000420  61 73 65 5f 63 6f 6d 70  6c 65 74 69 6f 6e 5f 6d  |ase_completion_m|
+00000430  6f 76 69 65 73 5f 72 70  75 18 01 2a 11 0a 0d 73  |ovies_rpu..*...s|
+00000440  65 73 73 69 6f 6e 5f 73  74 61 72 74 18 01 2a 08  |ession_start..*.|
+00000450  0a 04 74 65 73 74 18 01  2a 0d 0a 09 76 69 65 77  |..test..*...view|
+00000460  5f 69 74 65 6d 18 01 2a  12 0a 0e 76 69 65 77 5f  |_item..*...view_|
+00000470  69 74 65 6d 5f 6c 69 73  74 18 01 2a 17 0a 13 76  |item_list..*...v|
+00000480  69 65 77 5f 73 65 61 72  63 68 5f 72 65 73 75 6c  |iew_search_resul|
+00000490  74 73 18 01 40 01                                 |ts..@.|
+
+DNS-QUERY at 1642349814299
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642349814311
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	67	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1642349814312
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642349814324
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	280	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55444 -> firebase-settings.crashlytics.com:443 at 1642349814480
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55444 at 1642349814623
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:17:18 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1642522629311
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642522629331
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	270	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1642522629334
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERY at 1642522629337
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642522629350
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	253	IN	A	142.251.36.131
+
+DNS-QUERYRESPONSE at 1642522629355
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 2
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	AAAA	
+Answers:
+  m.facebook.com		3523	IN	CNAME	CNAME star-mini.c10r.facebook.com
+  star-mini.c10r.facebook.com	60	IN	AAAA	2a03:2880:f108:83:face:b00c:0:25de
+
+DNS-QUERY at 1642522629359
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642522629380
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 2
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	A	
+Answers:
+  m.facebook.com		3523	IN	CNAME	CNAME star-mini.c10r.facebook.com
+  star-mini.c10r.facebook.com	60	IN	A	31.13.86.36
+
+DNS-QUERY at 1642522630694
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	A	
+
+DNS-QUERY at 1642522630708
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642522630714
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 2
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	A	
+Answers:
+  m.facebook.com		2582	IN	CNAME	CNAME star-mini.c10r.facebook.com
+  star-mini.c10r.facebook.com	60	IN	A	31.13.86.36
+
+DNS-QUERYRESPONSE at 1642522630728
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 2
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	AAAA	
+Answers:
+  m.facebook.com		3522	IN	CNAME	CNAME star-mini.c10r.facebook.com
+  star-mini.c10r.facebook.com	59	IN	AAAA	2a03:2880:f108:83:face:b00c:0:25de
+
+DNS-QUERY at 1642522630766
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	A	
+
+DNS-QUERY at 1642522630768
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642522630779
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 2
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	A	
+Answers:
+  m.facebook.com		2582	IN	CNAME	CNAME star-mini.c10r.facebook.com
+  star-mini.c10r.facebook.com	60	IN	A	31.13.86.36
+
+DNS-QUERYRESPONSE at 1642522630782
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 2
+Authorities: 0
+Additionals: 0
+
+Questions:
+  m.facebook.com	0	IN	AAAA	
+Answers:
+  m.facebook.com		2582	IN	CNAME	CNAME star-mini.c10r.facebook.com
+  star-mini.c10r.facebook.com	60	IN	AAAA	2a03:2880:f108:83:face:b00c:0:25de
+
+DNS-QUERY at 1642522632351
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642522632375
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+Answers:
+  app-measurement.com	300	IN	AAAA	2a00:1450:4014:80b::200e
+
+DNS-QUERY at 1642522632375
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642522632391
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+Answers:
+  app-measurement.com	253	IN	A	142.251.36.110
+
+HTTPS-REQUEST 10.0.2.16:52748 -> app-measurement.com:443 at 1642522632523
+================================================================================
+POST /a HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Encoding: gzip
+Content-Length: 463
+Content-Type: application/x-www-form-urlencoded
+Host: app-measurement.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+
+˝E
+
+
+_oauto
+$
+_pv25.8.20-21 [0] [PR] 379052828_auêëÃ¬Ÿ. êëÃ¬Ÿ.êëÃ¬Ÿ._fot Ä°¯√Ÿ.êëÃ¬Ÿ._fi ¸˚¸ØÒ._sno ¸˚¸ØÒ._sid ô√ñÄ¿∑õÙÂ/_lte  π¿∑õÙÂ/_se ˛u ±∑õÙÂ/(êëÃ¬Ÿ.0êëÃ¬Ÿ.8êëÃ¬Ÿ.BandroidJ11RPixel 5Zen-us`<rcom.android.vendingÇ28.3.16-21 [0] [PR] 413990378à°ñêüéö$a1b7a446-6379-4ff0-969e-7e3df639df8a†\0™ cc7185f6c05f65bbc835ea59ebb905bf∞ÎÎßÅ∑Å≥Ì±∏ '1:327451421140:android:9c547b5ed466b580–êëÃ¬Ÿ.‡ÚfP4xmbHOTvOq7gQVBAaiLu¯˙—ø'ò…ﬁ€¸…ÊÙËÒÏÜ=¢G1--
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52748 at 1642522632537
+================================================================================
+HTTP/1.1 204 No Content
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Length: 0
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Date: Fri, 07 Jan 2022 16:16:49 GMT
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: Golfe2
+
+HTTPS-REQUEST 10.0.2.16:52748 -> app-measurement.com:443 at 1642522632743
+================================================================================
+GET /config/app/1%3A337986424019%3Aandroid%3Accec426438a760e3f8d826?app_instance_id=dca4dc8a5857ec1548b5fa13707c6bd1&platform=android&gmp_version=42004 HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: app-measurement.com
+If-Modified-Since: Tue, 05 Oct 2021 22:13:32 GMT
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52748 at 1642522632777
+================================================================================
+HTTP/1.1 304 Not Modified
+Age: 70
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: public, max-age=3000
+Date: Fri, 07 Jan 2022 16:16:09 GMT
+Expires: Fri, 07 Jan 2022 17:06:09 GMT
+Vary: accept-encoding
+
+DNS-QUERY at 1642522637557
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  qgwmvxwb	0	IN	AAAA	
+
+DNS-QUERY at 1642522637557
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  hcxdaiytx	0	IN	AAAA	
+
+DNS-QUERY at 1642522637557
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  ntwoeygca	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642522637567
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 3 (Non-Existent Domain)
+Questions: 1
+Answers: 0
+Authorities: 1
+Additionals: 0
+
+Questions:
+  ntwoeygca	0	IN	AAAA	
+Authorities:
+  	86394	IN	SOA	<IN, SOA>
+
+DNS-QUERY at 1642522637567
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  ntwoeygca	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642522637569
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 3 (Non-Existent Domain)
+Questions: 1
+Answers: 0
+Authorities: 1
+Additionals: 0
+
+Questions:
+  hcxdaiytx	0	IN	AAAA	
+Authorities:
+  	86366	IN	SOA	<IN, SOA>
+
+DNS-QUERYRESPONSE at 1642522637569
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 3 (Non-Existent Domain)
+Questions: 1
+Answers: 0
+Authorities: 1
+Additionals: 0
+
+Questions:
+  qgwmvxwb	0	IN	AAAA	
+Authorities:
+  	86397	IN	SOA	<IN, SOA>
+
+DNS-QUERY at 1642522637570
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  qgwmvxwb	0	IN	A	
+
+DNS-QUERY at 1642522637570
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  hcxdaiytx	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642522637581
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 3 (Non-Existent Domain)
+Questions: 1
+Answers: 0
+Authorities: 1
+Additionals: 0
+
+Questions:
+  ntwoeygca	0	IN	A	
+Authorities:
+  	86396	IN	SOA	<IN, SOA>
+
+DNS-QUERYRESPONSE at 1642522637583
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 3 (Non-Existent Domain)
+Questions: 1
+Answers: 0
+Authorities: 1
+Additionals: 0
+
+Questions:
+  hcxdaiytx	0	IN	A	
+Authorities:
+  	86366	IN	SOA	<IN, SOA>
+
+DNS-QUERYRESPONSE at 1642522637583
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 3 (Non-Existent Domain)
+Questions: 1
+Answers: 0
+Authorities: 1
+Additionals: 0
+
+Questions:
+  qgwmvxwb	0	IN	A	
+Authorities:
+  	86399	IN	SOA	<IN, SOA>
+
+DNS-QUERY at 1642609069181
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642609069194
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	219	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1642609069195
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642609069210
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	48	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55492 -> firebase-settings.crashlytics.com:443 at 1642609069610
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55492 at 1642609069751
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:17:57 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1642609070342
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642609070355
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	AAAA	
+Answers:
+  app-measurement.com	221	IN	AAAA	2a00:1450:4014:80b::200e
+
+DNS-QUERY at 1642609070356
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642609070366
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  app-measurement.com	0	IN	A	
+Answers:
+  app-measurement.com	215	IN	A	142.251.36.110
+
+HTTPS-REQUEST 10.0.2.16:52768 -> app-measurement.com:443 at 1642609070458
+================================================================================
+POST /a HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Encoding: gzip
+Content-Length: 506
+Content-Type: application/x-www-form-urlencoded
+Host: app-measurement.com
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+
+≥F
+
+
+_oauto
+
+_sidÖ–õè
+
+_sno
+
+_c
+
+_r_sÙ´ÈÔÊ/ Û¶Á°Â/O
+
+
+_oauto
+
+_scCustomTabMainActivity
+
+_siì∏Ï¢¸ÍäâÆ_vsÕ∫ÈÔÊ/ ÄéÁ”„/÷∆Õ™„/_fot ÄµÓ´„/÷∆Õ™„/_fi º√ÈÔÊ/_lte Ù´ÈÔÊ/_sno Ù´ÈÔÊ/_sid Ö–õèΩ√ÈÔÊ/_se \0 ‰¬ÈÔÊ/(Ù´ÈÔÊ/0Õ∫ÈÔÊ/8Û¶Á°Â/BandroidJ11RPixel 5Zen-us`\0jmanual_installrcom.gettr.gettrÇ1.0.5àî»êî»™ dca4dc8a5857ec1548b5fa13707c6bd1∞ñŸá˘ß¥¯‹¿∏¬1:2WC42004:Service invalid -1:337986424019:android:ccec426438a760e3f8d826–Û¶Á°Â/‡\0ÚeHdxer4BByyOfBcWX80B3e¯Ñ∞Ëò¿¥¡ó‘ÛÚ3¢G1--=
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52768 at 1642609070471
+================================================================================
+HTTP/1.1 204 No Content
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Length: 0
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Date: Fri, 07 Jan 2022 16:17:19 GMT
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: Golfe2
+
+HTTPS-REQUEST 10.0.2.16:52768 -> app-measurement.com:443 at 1642609070843
+================================================================================
+GET /config/app/1%3A337986424019%3Aandroid%3Accec426438a760e3f8d826?app_instance_id=dca4dc8a5857ec1548b5fa13707c6bd1&platform=android&gmp_version=42004 HTTP/1.1
+Host: app-measurement.com
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: app-measurement.com
+If-Modified-Since: Tue, 05 Oct 2021 22:13:32 GMT
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; Pixel 5 Build/RD1A.200810.021.A1)
+
+HTTPS-RESPONSE app-measurement.com:443 -> 10.0.2.16:52768 at 1642609070886
+================================================================================
+HTTP/1.1 304 Not Modified
+Age: 108
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: public, max-age=3000
+Date: Fri, 07 Jan 2022 16:16:09 GMT
+Expires: Fri, 07 Jan 2022 17:06:09 GMT
+Vary: accept-encoding
+
+DNS-QUERY at 1642954687213
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1642954687224
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	200	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1642954687224
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1642954687238
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	204	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55514 -> firebase-settings.crashlytics.com:443 at 1642954687719
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55514 at 1642954687790
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:18:16 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55514 at 1642954687830
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:18:28 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643127498382
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643127498396
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	232	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643127498396
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643127498400
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	182	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55562 -> firebase-settings.crashlytics.com:443 at 1643127498893
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55562 at 1643127499032
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:18:33 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643213903655
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643213903677
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	192	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643213903677
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643213903682
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	186	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55574 -> firebase-settings.crashlytics.com:443 at 1643213903824
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55574 at 1643213903962
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:18:39 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643300308538
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643300308549
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	220	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643300308549
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643300308553
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	180	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55578 -> firebase-settings.crashlytics.com:443 at 1643300308727
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55578 at 1643300308867
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:18:44 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643386713574
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643386713587
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	171	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643386713587
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643386713619
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	300	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55580 -> firebase-settings.crashlytics.com:443 at 1643386713795
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55580 at 1643386713934
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:18:50 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643473118573
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643473118592
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	165	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643473118592
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643473118601
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	169	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55582 -> firebase-settings.crashlytics.com:443 at 1643473118736
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55582 at 1643473118874
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:18:56 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643559523515
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643559523521
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	160	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643559523522
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643559523540
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	164	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55586 -> firebase-settings.crashlytics.com:443 at 1643559523727
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55586 at 1643559523871
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:19:01 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55586 at 1643559523911
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:19:07 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643645928575
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643645928588
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	164	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643645928588
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643645928590
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	158	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55590 -> firebase-settings.crashlytics.com:443 at 1643645928788
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55590 at 1643645928928
+================================================================================
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Date: Fri, 07 Jan 2022 16:19:12 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Server: ESF
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{"settings_version":3,"cache_duration":86400,"features":{"collect_logged_exceptions":true,"collect_reports":true,"collect_analytics":false,"prompt_enabled":false,"push_enabled":false,"firebase_crashlytics_enabled":false,"collect_anrs":true,"collect_metric_kit":false},"app":{"status":"activated","update_required":false,"report_upload_variant":2,"native_report_upload_variant":2},"fabric":{"org_id":"60d54ade6c51ce13cab0ca2d","bundle_id":"com.gettr.gettr"}}
+
+DNS-QUERY at 1643732333549
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643732333558
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	148	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643732333558
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643732333570
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	142	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55592 -> firebase-settings.crashlytics.com:443 at 1643732333728
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55592 at 1643732333868
+================================================================================
+
+DNS-QUERY at 1643818738630
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+
+DNS-QUERYRESPONSE at 1643818738642
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	AAAA	
+Answers:
+  firebase-settings.crashlytics.com	239	IN	AAAA	2a00:1450:4014:80e::2003
+
+DNS-QUERY at 1643818738643
+ ================================================================================
+Flags: RecursionDesired
+Response code: 0 (No Error)
+Questions: 1
+Answers: 0
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+
+DNS-QUERYRESPONSE at 1643818738653
+ ================================================================================
+Flags: RecursionDesired RecursionAvailable
+Response code: 0 (No Error)
+Questions: 1
+Answers: 1
+Authorities: 0
+Additionals: 0
+
+Questions:
+  firebase-settings.crashlytics.com	0	IN	A	
+Answers:
+  firebase-settings.crashlytics.com	272	IN	A	142.251.36.131
+
+HTTPS-REQUEST 10.0.2.16:55594 -> firebase-settings.crashlytics.com:443 at 1643818738816
+================================================================================
+GET /spi/v2/platforms/android/gmp/1:337986424019:android:ccec426438a760e3f8d826/settings?instance=6f4e486bc010f813d1677c660f7396fe6e9c983e&build_version=31070212&display_version=1.0.5&source=1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Host: firebase-settings.crashlytics.com
+User-Agent: Crashlytics Android SDK/18.0.1
+X-Crashlytics-Api-Client-Type: android
+X-Crashlytics-Api-Client-Version: 18.0.1
+X-Crashlytics-Developer-Token: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-Crashlytics-Device-Model: unknown/Pixel 5
+X-Crashlytics-Google-App-Id: 1:337986424019:android:ccec426438a760e3f8d826
+X-Crashlytics-Installation-Id: 7e320676e7374c46aebc272848c4d865
+X-Crashlytics-Os-Build-Version: eng.tassad.20220106.095615
+X-Crashlytics-Os-Display-Version: 11
+
+HTTPS-RESPONSE firebase-settings.crashlytics.com:443 -> 10.0.2.16:55594 at 1643818738857
+================================================================================
+

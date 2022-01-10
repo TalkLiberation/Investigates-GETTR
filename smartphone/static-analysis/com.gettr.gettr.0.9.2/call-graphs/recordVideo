@@ -1,0 +1,51 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/media/MediaRecorder;->start()" [color="#593196" fontcolor=white]
+	"Landroid/media/MediaRecorder;->setOutputFile()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lg/p/a/a/a;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lio/flutter/plugins/camera/MethodCallHandlerImpl;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lio/flutter/plugins/camera/p;->run()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lio/flutter" -> "Landroid/media/MediaRecorder;->start()" [constraint=true]
+	"Lio/flutter" -> "Landroid/media/MediaRecorder;->setOutputFile()" [constraint=true]
+	"Lg/p" -> "Landroid/media/MediaRecorder;->start()" [constraint=true]
+	"Lg/p" -> "Landroid/media/MediaRecorder;->setOutputFile()" [constraint=true]
+	"Lio/flutter/plugins/camera/p;->run()" -> "Lio/flutter" [constraint=true]
+	"Lg/p/a/a/a;->onMethodCall()" -> "Lg/p" [constraint=true]
+	"Lio/flutter/plugins/camera/MethodCallHandlerImpl;->onMethodCall()" -> "Lio/flutter" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lg/p/a/a/a;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lio/flutter/plugins/camera/MethodCallHandlerImpl;->onMethodCall()" [color="#a991d4" fontcolor=white]
+	}
+}

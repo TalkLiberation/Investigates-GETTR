@@ -1,0 +1,72 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lly/count/android/sdk/messaging/CountlyPush;->displayMessage()" [color="#a991d4" fontcolor=white]
+			"Lq/a/a/b;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lcom/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin;->onMethodCall()" [color="#a991d4" fontcolor=white]
+			"Lly/count/android/sdk/Countly;->onCreate()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_receiver {
+			label=Receiver
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/dexterous/flutterlocalnotifications/ScheduledNotificationReceiver;->onReceive()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_service {
+			label=Service
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/messaging/FirebaseMessagingService;->handleIntent()" [color="#a991d4" fontcolor=white]
+			"Lcom/dexterous/flutterlocalnotifications/ForegroundService;->onStartCommand()" [color="#a991d4" fontcolor=white]
+			"Lly/count/dart/countly_flutter/CountlyMessagingService;->onMessageReceived()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/google" -> "Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [constraint=true]
+	"Lly/count/android/sdk/messaging/CountlyPush;->displayMessage()" -> "Lly/count" [constraint=true]
+	"Lly/count" -> "Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [constraint=true]
+	"Lx/a" -> "Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [constraint=true]
+	"Lq/a/a/b;->onMethodCall()" -> "Lx/a" [constraint=true]
+	"Lcom/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin;->onMethodCall()" -> "Lcom/dexterous" [constraint=true]
+	"Lcom/dexterous" -> "Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [constraint=true]
+	"Lly/count/android/sdk/Countly;->onCreate()" -> "Landroid/content/pm/PackageManager;->getLaunchIntentForPackage()" [constraint=true]
+	"Lcom/google/firebase/messaging/FirebaseMessagingService;->handleIntent()" -> "Lcom/google" [constraint=true]
+	"Lcom/dexterous/flutterlocalnotifications/ForegroundService;->onStartCommand()" -> "Lcom/dexterous" [constraint=true]
+	"Lcom/dexterous/flutterlocalnotifications/ScheduledNotificationReceiver;->onReceive()" -> "Lcom/dexterous" [constraint=true]
+	"Lly/count/dart/countly_flutter/CountlyMessagingService;->onMessageReceived()" -> "Lly/count" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lly/count/android/sdk/messaging/CountlyPush;->displayMessage()" [color="#a991d4" fontcolor=white]
+		"Lq/a/a/b;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lcom/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		"Lly/count/android/sdk/Countly;->onCreate()" [color="#a991d4" fontcolor=white]
+	}
+}

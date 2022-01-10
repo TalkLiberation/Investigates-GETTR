@@ -1,0 +1,116 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/hardware/SensorManager;->getSensorList()" [color="#593196" fontcolor=white]
+	"Landroid/hardware/SensorManager;->getDefaultSensor()" [color="#593196" fontcolor=white]
+	"Landroid/hardware/SensorManager;->registerListener()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/bitmovin/player/o/a$a$l0;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/ui/PlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/z/s/a$b;->onActivityResumed()" [color="#a991d4" fontcolor=white]
+			"Lio/sentry/android/core/TempSensorBreadcrumbsIntegration;->register()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/ui/PlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/ui/StyledPlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/ui/StyledPlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/ui/spherical/SphericalGLSurfaceView;->onPause()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->onPause()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->setUseSensorRotation()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/ui/spherical/SphericalGLSurfaceView;->onResume()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->onResume()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/player/v/k/a;->enable()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/ui/StyledPlayerView;->setUseSensorRotation()" [color="#a991d4" fontcolor=white]
+			"Lcom/bitmovin/android/exoplayer2/ui/PlayerView;->setUseSensorRotation()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/appsflyer/internal/ai$d;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/appsflyer/internal/ab$3;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$6;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsCore$2;->run()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_callable {
+			label=Callable
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsCore$1;->call()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$2;->call()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/appsflyer" -> "Landroid/hardware/SensorManager;->getSensorList()" [constraint=true]
+	"Lcom/appsflyer/internal/ai$d;->run()" -> "Lcom/appsflyer" [constraint=true]
+	"Lcom/appsflyer/internal/ab$3;->run()" -> "Landroid/hardware/SensorManager;->getSensorList()" [constraint=true]
+	"Lcom/appsflyer/internal/ab$3;->run()" -> "Landroid/hardware/SensorManager;->registerListener()" [constraint=true]
+	"Lcom/google" -> "Landroid/hardware/SensorManager;->getDefaultSensor()" [constraint=true]
+	"Lcom/google" -> "Landroid/hardware/SensorManager;->registerListener()" [constraint=true]
+	"Lcom/facebook" -> "Landroid/hardware/SensorManager;->getDefaultSensor()" [constraint=true]
+	"Lcom/facebook" -> "Landroid/hardware/SensorManager;->registerListener()" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsCore$1;->call()" -> "Lcom/google" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/ui/PlayerView;-><init>()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin" -> "Landroid/hardware/SensorManager;->getDefaultSensor()" [constraint=true]
+	"Lcom/bitmovin" -> "Landroid/hardware/SensorManager;->registerListener()" [constraint=true]
+	"Lcom/google/android/exoplayer2/ui/StyledPlayerView;-><init>()" -> "Lcom/google" [constraint=true]
+	"Lcom/bitmovin/player/o/a$a$l0;->invoke()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/ui/StyledPlayerView;-><init>()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$2;->call()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/ui/PlayerView;-><init>()" -> "Lcom/google" [constraint=true]
+	"Lcom/facebook/z/s/a$b;->onActivityResumed()" -> "Lcom/facebook" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsController$6;->run()" -> "Lcom/google" [constraint=true]
+	"Lio/sentry/android/core/TempSensorBreadcrumbsIntegration;->register()" -> "Landroid/hardware/SensorManager;->getDefaultSensor()" [constraint=true]
+	"Lio/sentry/android/core/TempSensorBreadcrumbsIntegration;->register()" -> "Landroid/hardware/SensorManager;->registerListener()" [constraint=true]
+	"Lcom/google/firebase/crashlytics/internal/common/CrashlyticsCore$2;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/ui/spherical/SphericalGLSurfaceView;->onPause()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->onPause()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->setUseSensorRotation()" -> "Lcom/google" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/ui/spherical/SphericalGLSurfaceView;->onResume()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->onResume()" -> "Lcom/google" [constraint=true]
+	"Lcom/bitmovin/player/v/k/a;->enable()" -> "Landroid/hardware/SensorManager;->registerListener()" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/ui/StyledPlayerView;->setUseSensorRotation()" -> "Lcom/bitmovin" [constraint=true]
+	"Lcom/bitmovin/android/exoplayer2/ui/PlayerView;->setUseSensorRotation()" -> "Lcom/bitmovin" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/bitmovin/player/o/a$a$l0;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/ui/PlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/facebook/z/s/a$b;->onActivityResumed()" [color="#a991d4" fontcolor=white]
+		"Lio/sentry/android/core/TempSensorBreadcrumbsIntegration;->register()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/ui/PlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/ui/StyledPlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/ui/StyledPlayerView;-><init>()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/ui/spherical/SphericalGLSurfaceView;->onPause()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->onPause()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->setUseSensorRotation()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/ui/spherical/SphericalGLSurfaceView;->onResume()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/video/spherical/SphericalGLSurfaceView;->onResume()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/player/v/k/a;->enable()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/ui/StyledPlayerView;->setUseSensorRotation()" [color="#a991d4" fontcolor=white]
+		"Lcom/bitmovin/android/exoplayer2/ui/PlayerView;->setUseSensorRotation()" [color="#a991d4" fontcolor=white]
+	}
+}

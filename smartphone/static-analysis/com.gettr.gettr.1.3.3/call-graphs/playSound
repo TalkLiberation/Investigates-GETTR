@@ -1,0 +1,35 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Landroid/media/AudioManager;->playSoundEffect()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Landroidx/appcompat/app/e$o;->dispatchKeyEvent()" [color="#a991d4" fontcolor=white]
+			"Landroidx/appcompat/app/e$t;->dispatchKeyEvent()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Landroidx/appcompat" -> "Landroid/media/AudioManager;->playSoundEffect()" [constraint=true]
+	"Landroidx/appcompat/app/e$o;->dispatchKeyEvent()" -> "Landroidx/appcompat" [constraint=true]
+	"Landroidx/appcompat/app/e$t;->dispatchKeyEvent()" -> "Landroidx/appcompat" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Landroidx/appcompat/app/e$o;->dispatchKeyEvent()" [color="#a991d4" fontcolor=white]
+		"Landroidx/appcompat/app/e$t;->dispatchKeyEvent()" [color="#a991d4" fontcolor=white]
+	}
+}

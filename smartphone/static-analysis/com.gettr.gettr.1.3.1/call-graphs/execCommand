@@ -1,0 +1,62 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljava/lang/Runtime;->exec()" [color="#593196" fontcolor=white]
+	"Ljava/lang/Runtime;->exec()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/banuba/sdk/veui/ui/editor/f$f;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/ve/flow/g0/b$c;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/android/sdk/ve/timeline/music/l$i;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/f/a/c$a;->invoke()" [color="#a991d4" fontcolor=white]
+			"Lcom/banuba/sdk/veui/ui/editor/f$j;->invokeSuspend()" [color="#a991d4" fontcolor=white]
+			"Lh/k/a/a;->onMethodCall()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_callable {
+			label=Callable
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lio/sentry/android/core/i;->call()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/banuba" -> "Ljava/lang/Runtime;->exec()" [constraint=true]
+	"Lcom/banuba/sdk/veui/ui/editor/f$f;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/sdk/ve/flow/g0/b$c;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/android/sdk/ve/timeline/music/l$i;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/sdk/f/a/c$a;->invoke()" -> "Lcom/banuba" [constraint=true]
+	"Lcom/banuba/sdk/veui/ui/editor/f$j;->invokeSuspend()" -> "Lcom/banuba" [constraint=true]
+	"Lio/sentry" -> "Ljava/lang/Runtime;->exec()" [constraint=true]
+	"Lh/k" -> "Ljava/lang/Runtime;->exec()" [constraint=true]
+	"Lio/sentry/android/core/i;->call()" -> "Lio/sentry" [constraint=true]
+	"Lh/k/a/a;->onMethodCall()" -> "Lh/k" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/banuba/sdk/veui/ui/editor/f$f;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/ve/flow/g0/b$c;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/android/sdk/ve/timeline/music/l$i;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/f/a/c$a;->invoke()" [color="#a991d4" fontcolor=white]
+		"Lcom/banuba/sdk/veui/ui/editor/f$j;->invokeSuspend()" [color="#a991d4" fontcolor=white]
+		"Lh/k/a/a;->onMethodCall()" [color="#a991d4" fontcolor=white]
+	}
+}

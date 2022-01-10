@@ -1,0 +1,270 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="32010623" android:versionName="1.3.3" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.gettr.gettr" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"></uses-sdk>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <queries>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"></action>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.oem.PRELOAD_PROVIDER"></action>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"></uses-permission>
+    <uses-permission android:name="com.gettr.gettr.CountlyPush.BROADCAST_PERMISSION"></uses-permission>
+    <permission android:name="com.gettr.gettr.CountlyPush.BROADCAST_PERMISSION" android:protectionLevel="0x2"></permission>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"></uses-permission>
+    <uses-permission android:name="android.permission.REORDER_TASKS"></uses-permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"></uses-feature>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"></uses-permission>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"></uses-permission>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"></uses-permission>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"></uses-permission>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"></uses-permission>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"></uses-permission>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"></uses-permission>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"></uses-permission>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"></uses-permission>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"></uses-permission>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"></uses-permission>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"></uses-permission>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"></uses-permission>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"></uses-permission>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"></uses-permission>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"></uses-permission>
+    <application android:theme="null" android:label="GETTR" android:icon="res/mipmap-xxxhdpi-v4/ic_launcher.png" android:name="org.getter.GApplication" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="false" android:fullBackupContent="res/xml/appsflyer_backup_rules.xml" android:usesCleartextTraffic="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:isSplitRequired="true" android:requestLegacyExternalStorage="true">
+        <activity android:theme="null" android:name="org.getter.MainActivity" android:exported="true" android:launchMode="2" android:configChanges="0x40003fb4" android:windowSoftInputMode="0x10" android:hardwareAccelerated="true">
+            <meta-data android:name="io.flutter.embedding.android.NormalTheme" android:resource="null"></meta-data>
+            <meta-data android:name="io.flutter.embedding.android.SplashScreenDrawable" android:resource="res/drawable/launch_background.xml"></meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="FLUTTER_NOTIFICATION_CLICK"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="text/*"></data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="image/*"></data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="image/*"></data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="video/*"></data>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:scheme="https" android:host="www.gettr.com"></data>
+                <data android:scheme="https" android:host="gettr.com"></data>
+            </intent-filter>
+        </activity>
+        <activity android:theme="null" android:name="org.getter.MaskActivity" android:exported="false" android:screenOrientation="1"></activity>
+        <activity android:theme="null" android:name="com.yalantis.ucrop.UCropActivity" android:exported="false"></activity>
+        <activity android:theme="null" android:name="com.getter.video.edit.TrimmerActivity" android:exported="false"></activity>
+        <activity android:theme="@1030007" android:label="Zendesk SDK" android:name="ly.img.android.pesdk.ui.activity.EditorActivity" android:exported="false" android:screenOrientation="1" android:configChanges="0x430" android:windowSoftInputMode="0x20" android:hardwareAccelerated="true"></activity>
+        <activity android:name="ly.img.android.pedsk.ui.activity.PhotoEditorActivity" android:exported="false"></activity>
+        <activity android:theme="@1030007" android:label="Zendesk SDK" android:name="ly.img.android.pesdk.ui.activity.VideoEditorActivity" android:exported="false" android:screenOrientation="1" android:configChanges="0x430" android:windowSoftInputMode="0x20" android:hardwareAccelerated="true"></activity>
+        <activity android:theme="null" android:name="com.banuba.sdk.ve.flow.VideoCreationActivity" android:exported="false" android:screenOrientation="1" android:windowSoftInputMode="0x10" android:resizeableActivity="false"></activity>
+        <meta-data android:name="flutterEmbedding" android:value="2"></meta-data>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="res/drawable-xhdpi-v4/ic_notification.png"></meta-data>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="#ffcc0000"></meta-data>
+        <meta-data android:name="android.max_aspect" android:value="2.4"></meta-data>
+        <meta-data android:name="android.notch_support" android:value="true"></meta-data>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"></meta-data>
+        <meta-data android:name="BITMOVIN_PLAYER_LICENSE_KEY" android:value="2b7f0341-98fd-43b1-8e53-48d1c6f4ded6"></meta-data>
+        <provider android:name="org.getter.GFileProvider" android:exported="false" android:authorities="com.gettr.gettr.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="res/xml/file_paths_public.xml"></meta-data>
+        </provider>
+        <service android:name="com.appsflyer.FirebaseMessagingServiceListener">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"></receiver>
+        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"></action>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"></action>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.example.r_upgrade.common.UpgradeService"></service>
+        <provider android:name="com.example.r_upgrade.RUpgradeFileProvider" android:exported="false" android:authorities="com.gettr.gettr.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="res/xml/provider_paths.xml"></meta-data>
+        </provider>
+        <activity android:theme="null" android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity" android:configChanges="0x400035b4"></activity>
+        <activity android:theme="null" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"></activity>
+        <receiver android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"></receiver>
+        <meta-data android:name="io.flutter.embedded_views_preview" android:value="true"></meta-data>
+        <service android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"></service>
+        <service android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+        <receiver android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+        </service>
+        <provider android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider" android:exported="false" android:authorities="com.gettr.gettr.flutterfirebasemessaginginitprovider" android:initOrder="99"></provider>
+        <provider android:name="ly.img.android.IMGLYAutoInit" android:enabled="false" android:exported="false" android:authorities="com.gettr.gettr.IMGLYAutoInit"></provider>
+        <service android:name="ly.count.dart.countly_flutter.CountlyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+        <receiver android:name="ly.count.android.sdk.ReferrerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"></action>
+            </intent-filter>
+        </receiver>
+        <provider android:name="io.flutter.plugins.share.ShareFileProvider" android:exported="false" android:authorities="com.gettr.gettr.flutter.share_provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="res/xml/flutter_share_file_paths.xml"></meta-data>
+        </provider>
+        <activity android:theme="@1030007" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:exported="false"></activity>
+        <activity android:name="org.getter.matisse.ui.MatisseActivity"></activity>
+        <activity android:name="org.getter.matisse.internal.ui.AlbumPreviewActivity"></activity>
+        <activity android:name="org.getter.matisse.internal.ui.SelectedPreviewActivity"></activity>
+        <uses-library android:name="android.test.runner" android:required="true"></uses-library>
+        <uses-library android:name="android.test.base" android:required="false"></uses-library>
+        <uses-library android:name="android.test.mock" android:required="false"></uses-library>
+        <activity android:name="zendesk.support.request.RequestActivity" android:windowSoftInputMode="0x10"></activity>
+        <activity android:label="My tickets" android:name="zendesk.support.requestlist.RequestListActivity"></activity>
+        <receiver android:name="zendesk.support.DeepLinkingBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="zendesk.support"></action>
+            </intent-filter>
+        </receiver>
+        <provider android:name="zendesk.support.SupportSdkStartupProvider" android:enabled="true" android:exported="false" android:authorities="com.gettr.gettr.zendesk.support.SupportSdkStartupProvider"></provider>
+        <activity android:label="" android:name="zendesk.support.guide.ViewArticleActivity" android:configChanges="0x480"></activity>
+        <activity android:label="Support" android:name="zendesk.support.guide.HelpCenterActivity" android:windowSoftInputMode="0x10"></activity>
+        <provider android:name="zendesk.support.guide.GuideSdkStartupProvider" android:enabled="true" android:exported="false" android:authorities="com.gettr.gettr.zendesk.support.GuideSdkStartupProvider"></provider>
+        <activity android:name="zendesk.messaging.MessagingActivity" android:windowSoftInputMode="0x10"></activity>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.bitmovin.player.offline.service.BitmovinDownloadService"></service>
+        <service android:name="com.bitmovin.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"></service>
+        <activity android:theme="null" android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity" android:exported="true" android:taskAffinity="" android:multiprocess="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+            </intent-filter>
+        </activity>
+        <activity android:theme="null" android:name="com.facebook.FacebookActivity" android:configChanges="0x5b0"></activity>
+        <activity android:name="com.facebook.CustomTabMainActivity"></activity>
+        <activity android:name="com.facebook.CustomTabActivity"></activity>
+        <activity android:theme="@1030007" android:label="Zendesk SDK" android:name="ly.img.android.pesdk.ui.activity.PhotoEditorActivity" android:exported="true" android:screenOrientation="1" android:configChanges="0x430" android:windowSoftInputMode="0x20" android:hardwareAccelerated="true"></activity>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"></meta-data>
+        <service android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"></meta-data>
+        </service>
+        <provider android:name="com.google.mlkit.common.internal.MlKitInitProvider" android:exported="false" android:authorities="com.gettr.gettr.mlkitinitprovider" android:initOrder="99"></provider>
+        <activity android:theme="@1030010" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"></activity>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.gettr.gettr.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"></provider>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"></receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"></service>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"></service>
+        <meta-data android:name="com.google.android.gms.version" android:value="12451000"></meta-data>
+        <provider android:name="zendesk.belvedere.BelvedereFileProvider" android:readPermission="true" android:exported="false" android:authorities="com.gettr.gettr.belvedere2.attachments" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="res/xml/belvedere_attachment_storage_v2.xml"></meta-data>
+        </provider>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.gettr.gettr.FacebookInitProvider"></provider>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.facebook.CampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"></action>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.gettr.gettr.com.squareup.picasso"></provider>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.gettr.gettr.lifecycle-process"></provider>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"></meta-data>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"></service>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"></receiver>
+        <activity android:theme="@1030005" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@1030005" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@103000b" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+            </intent-filter>
+        </activity>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"></service>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="3"></activity>
+        <activity android:theme="null" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:enabled="false" android:exported="false" android:stateNotNeeded="true"></activity>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true"></service>
+        <receiver android:name="ly.count.android.sdk.messaging.CountlyPush$NotificationBroadcastReceiver" android:permission="com.gettr.gettr.CountlyPush.BROADCAST_PERMISSION" android:exported="false">
+            <intent-filter>
+                <action android:name="ly.count.android.sdk.CountlyPush.SECURE_NOTIFICATION_BROADCAST"></action>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"></meta-data>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"></meta-data>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"></meta-data>
+        <meta-data android:name="com.android.vending.splits" android:resource="res/xml/splits0.xml"></meta-data>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"></meta-data>
+    </application>
+</manifest>

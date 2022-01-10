@@ -1,0 +1,73 @@
+digraph {
+	graph [diredgeconstraints=true overlap=orthoxy splines=ortho]
+	node [color="#ece5f6" fontcolor="#593196" fontname="sans-serif" fontsize=10 shape=box style=filled]
+	edge [color="#593196"]
+	"Ljava/net/HttpURLConnection;->setRequestMethod()" [color="#593196" fontcolor=white]
+	"Ljava/net/HttpURLConnection;->setRequestProperty()" [color="#593196" fontcolor=white]
+	subgraph cluster_entrypoints {
+		label=Entrypoints
+		shape=box
+		color="#593196"
+		fontcolor="#593196"
+		fontsize=14
+		margin=6
+		fontname="sans-serif"
+		labeljust=l
+		subgraph cluster_unknown {
+			label=Unknown
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/airbnb/lottie/w/b;->a()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/datatransport/cct/b;->apply()" [color="#a991d4" fontcolor=white]
+			"Lcom/google/android/exoplayer2/upstream/u;->j()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_thread {
+			label=Thread
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/installations/FirebaseInstallations$$Lambda$4;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/example/r_upgrade/common/UpgradeService$b;->run()" [color="#a991d4" fontcolor=white]
+			"Lcom/facebook/imagepipeline/producers/x$a;->run()" [color="#a991d4" fontcolor=white]
+		}
+		subgraph cluster_callable {
+			label=Callable
+			color="#ece5f6"
+			style=filled
+			margin=5
+			fontcolor="#593196"
+			fontsize=12
+			fontname="sans-serif"
+			labeljust=l
+			"Lcom/google/firebase/installations/FirebaseInstallations$$Lambda$3;->call()" [color="#a991d4" fontcolor=white]
+			"Lg/j/a/b/d/b/b$b;->call()" [color="#a991d4" fontcolor=white]
+		}
+	}
+	"Lcom/google" -> "Ljava/net/HttpURLConnection;->setRequestMethod()" [constraint=true]
+	"Lcom/google" -> "Ljava/net/HttpURLConnection;->setRequestProperty()" [constraint=true]
+	"Lcom/airbnb/lottie/w/b;->a()" -> "Ljava/net/HttpURLConnection;->setRequestMethod()" [constraint=true]
+	"Lcom/google/firebase/installations/FirebaseInstallations$$Lambda$3;->call()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/firebase/installations/FirebaseInstallations$$Lambda$4;->run()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/datatransport/cct/b;->apply()" -> "Lcom/google" [constraint=true]
+	"Lcom/google/android/exoplayer2/upstream/u;->j()" -> "Lcom/google" [constraint=true]
+	"Lg/j/a/b/d/b/b$b;->call()" -> "Ljava/net/HttpURLConnection;->setRequestMethod()" [constraint=true]
+	"Lg/j/a/b/d/b/b$b;->call()" -> "Ljava/net/HttpURLConnection;->setRequestProperty()" [constraint=true]
+	"Lcom/example/r_upgrade/common/UpgradeService$b;->run()" -> "Ljava/net/HttpURLConnection;->setRequestMethod()" [constraint=true]
+	"Lcom/example/r_upgrade/common/UpgradeService$b;->run()" -> "Ljava/net/HttpURLConnection;->setRequestProperty()" [constraint=true]
+	"Lcom/facebook" -> "Ljava/net/HttpURLConnection;->setRequestProperty()" [constraint=true]
+	"Lcom/facebook/imagepipeline/producers/x$a;->run()" -> "Lcom/facebook" [constraint=true]
+	subgraph cluster_other_entrypoints {
+		"Lcom/airbnb/lottie/w/b;->a()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/datatransport/cct/b;->apply()" [color="#a991d4" fontcolor=white]
+		"Lcom/google/android/exoplayer2/upstream/u;->j()" [color="#a991d4" fontcolor=white]
+	}
+}
