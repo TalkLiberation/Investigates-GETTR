@@ -20,7 +20,7 @@ Talk Liberation encourages readers to independently validate this work and to de
 
 * GETTR’s privacy policies fail to disclose the full extent of GETTR data collection and sharing with third parties.
 
-G* ETTR infrastructure is hosted by cloud vendors such as Amazon AWS and company email accounts are hosted by Google.
+* GETTR infrastructure is hosted by cloud vendors such as Amazon AWS and company email accounts are hosted by Google.
 
 * Utilizing the API of GETTR to gather large amounts of data is trivial. The situation has improved since approx. 90,000 emails were breached in July 2021, but a trove of information is still available via basic technical methods.
 
