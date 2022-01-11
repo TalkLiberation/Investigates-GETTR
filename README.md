@@ -5,8 +5,6 @@ https://talkliberation.com/gettr
 
 [This repository](https://talkliberation.com/gettr-repo) contains supporting material for an investigation by [Talk Liberation](https://talkliberation.substack.com) into the [GETTR](https://en.wikipedia.org/wiki/Gettr) social media platform and smartphone apps conducted in January 2022.
 
-All of these files were obtained via technical analyis with freely-available and Free and Open-Source Software (FOSS) tools, and none of the published information was obtained via leaks, hacking, or data breaches.
-
 Talk Liberation encourages readers to independently validate this work and to develop it further. The information here is provided for context as well as journalistic and technical exploration beyond the scope of our initial investigation.
 
 ## Key Findings
@@ -37,6 +35,8 @@ These files relate to static analysis, dynamic analysis, and network analysis of
 These files relate to static analysis, dynamic analysis, and network analysis of the GETTR web app at _gettr.com_, including privacy and security information such as JSON output from the GETTR API.
 
 ## Licensing
+
+All of these files were generated via technical analyis with freely-available and Free and Open-Source Software (FOSS) tools, and none of the published information was obtained via leaks, hacking, or data breaches.
 
 Any and all original work contained in this repository that is authored by Sean O'Brien for Talk Liberation is released under the [CC0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) and the author has waived all copyright and related or neighboring rights to that work, to the extent possible under law.
 
