@@ -1,0 +1,59 @@
+Domain Name: GETTR.COM
+Registry Domain ID: 1420501106_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.epik.com
+Registrar URL: http://www.epik.com
+Updated Date: 2021-09-17T12:50:01Z
+Creation Date: 2008-03-11T23:07:33Z
+Registrar Registration Expiration Date: 2024-03-11T23:07:33Z
+Registrar: Epik Holdings Inc
+Registrar IANA ID: 617
+Registrar Abuse Contact Email: abuse@epik.com
+Registrar Abuse Contact Phone: +1.2068262345
+Reseller: 
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: 
+Registrant Name: Privacy Administrator
+Registrant Organization: Anonymize, Inc.
+Registrant Street: 1100 Bellevue Way NE, Ste 8A-601
+Registrant City: Bellevue
+Registrant State/Province: WA
+Registrant Postal Code: 98004
+Registrant Country: US
+Registrant Phone: +1.4253668810
+Registrant Phone Ext: 
+Registrant Fax: 
+Registrant Fax Ext: 
+Registrant Email: gettr.com-t89np5je9dtf@anonymize.com
+Registry Admin ID: 
+Admin Name: Privacy Administrator
+Admin Organization: Anonymize, Inc.
+Admin Street: 1100 Bellevue Way NE, Ste 8A-601
+Admin City: Bellevue
+Admin State/Province: WA
+Admin Postal Code: 98004
+Admin Country: US
+Admin Phone: +1.4253668810
+Admin Phone Ext: 
+Admin Fax: 
+Admin Fax Ext: 
+Admin Email: gettr.com-t89np5je9dtf@anonymize.com
+Registry Tech ID: 
+Tech Name: Privacy Administrator
+Tech Organization: Anonymize, Inc.
+Tech Street: 1100 Bellevue Way NE, Ste 8A-601
+Tech City: Bellevue
+Tech State/Province: WA
+Tech Postal Code: 98004
+Tech Country: US
+Tech Phone: +1.4253668810
+Tech Phone Ext: 
+Tech Fax: 
+Tech Fax Ext: 
+Tech Email: gettr.com-t89np5je9dtf@anonymize.com
+Name Server: LEO.NS.CLOUDFLARE.COM
+Name Server: MIRA.NS.CLOUDFLARE.COM
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database:  <<<
+
+All registrar data, including registrant WHOIS data, is provided for public, non-commerical use only.  Any information made available by Epik Inc and its affiliate registrars shall not be collected, distributed or used for any commercial activity.  Third parties to agree not to use the data to allow, enable, or otherwise support any marketing activities, regardless of the medium used. Such media include but are not limited to e-mail, telephone, facsimile, postal mail, SMS, and wireless alerts.

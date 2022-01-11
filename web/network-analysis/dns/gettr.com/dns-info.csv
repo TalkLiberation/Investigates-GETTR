@@ -1,0 +1,14 @@
+"Hostname","IP Address","Type","Reverse DNS","Netblock Owner","Country","Tech / Apps","HTTP / Title","HTTPS / Title","FTP / SSH / Telnet","HTTP Other"
+"gettr.com","52.85.79.72","A","server-52-85-79-72.ord51.r.cloudfront.net","AMAZON-02","United States",,"CloudFront title: ERROR: The request could not b",,,
+"1.static.mailing.gettr.com","69.72.34.156","A","1.static.mailing.gettr.com","RACKSPACE","United States",,,,,
+"2.static.mailing.gettr.com","69.72.34.219","A","2.static.mailing.gettr.com","RACKSPACE","United States",,,,,
+"api.gettr.com","104.18.21.236","A",,"CLOUDFLARENET","unknown",,"cloudflare",,,"cloudflare"
+"email.gettr.com","104.18.21.236","A",,"CLOUDFLARENET","unknown",,"cloudflare",,,"cloudflare"
+"test.gettr.com","104.18.21.236","A",,"CLOUDFLARENET","unknown",,"cloudflare",,,"cloudflare"
+"leo.ns.cloudflare.com.","108.162.195.241","NS","leo.ns.cloudflare.com","CLOUDFLARENET","United States",,,,,
+"mira.ns.cloudflare.com.","173.245.58.204","NS","mira.ns.cloudflare.com","CLOUDFLARENET","United States",,,,,
+"10 alt4.aspmx.l.google.com.","64.233.184.26","MX","wa-in-f26.1e100.net","GOOGLE","United States",,,,,
+"10 alt3.aspmx.l.google.com.","209.85.202.26","MX","dg-in-f26.1e100.net","GOOGLE","United States",,,,,
+"5 alt2.aspmx.l.google.com.","64.233.186.27","MX","cb-in-f27.1e100.net","GOOGLE","United States",,,,,
+"5 alt1.aspmx.l.google.com.","108.177.12.26","MX","ua-in-f26.1e100.net","GOOGLE","United States",,,,,
+"1 aspmx.l.google.com.","142.251.4.27","MX","gm-in-f27.1e100.net","GOOGLE","United States",,,,,
