@@ -1,7 +1,6 @@
+![Talk Liberation Investigates Logo](talkliberation-investigates-logo.png) 
 # Talk Liberation Investigates [GETTR](https://talkliberation.com/gettr)
 https://talkliberation.com/gettr
-
-## Introduction
 
 [This repository](https://talkliberation.com/gettr-repo) contains supporting material for an investigation by [Talk Liberation](https://talkliberation.substack.com) into the [GETTR](https://en.wikipedia.org/wiki/Gettr) social media platform and smartphone apps conducted in January 2022.
 
